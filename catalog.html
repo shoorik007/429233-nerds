@@ -6,8 +6,197 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-
-   
-
+    <!-- Header -->
+      <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
+          <img src="http://placehold.it/150x100" width="160" height="76" alt="Логотип веб-студии «Nerds»">
+        </a>
+        <ul class="site-navigation">
+           <li><a href="studio.html">Студия</a></li>
+           <li><a href="clients.html">Клиенты</a></li>
+           <li><a class="site-navigation-current">Магазин</a></li>
+           <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <div class="user-navigation">
+          <a class="cart-enter">Корзина</a>
+        </div>
+       </nav>
+          <h1>Магазин готовых шаблонов</h1>
+    </header>
+      <!-- Main -->
+      <!-- Filtes -->
+      <main class="container">
+          <section class="filters">
+              <h2 class="visually-hidden">Фильр услуг</h2>
+              <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=pricecount.value">
+                 <fieldset>
+                     <legend><b>Стоимость:</b></legend>
+                      <input type="range" id="pricecount" name="pricecount" min="0" max="25000" step="1">
+                      <div class="output-area">
+                        От <span class="output-area-pice">0</span>
+                        До <output name="priceoutput"><span class="output-area-pice"></span></output>
+                     </div>
+                  </fieldset>
+                  <fieldset>
+                      <legend>Сетка:</legend>
+                        <ul>
+                          <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="Adaptive-grid" checked> Адаптивная
+                         </li>
+                         <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="fixed-grid"> Фиксированная
+                         </li>
+                         <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="rubber-grid"> Резиновая
+                        </li>
+                     </ul>
+                  </fieldset>
+                  <fieldset>
+                      <legend>Особенности:</legend>
+                      <ul>
+                          <li>
+                            <input class="visually-hidden filter-input filter-input-check-box" type="checkbox" name="slider" checked>Слайдер
+                          </li>
+                          <li>
+                            <input class="visually-hidden filter-input filter-input-check-box" type="checkbox" name="futures">Блок преимуществ
+                          </li>
+                          <li>
+                            <input class="visually-hidden filter-input filter-input-check-box" type="checkbox" name="news" checked>Новости     
+                          </li>
+                          <li>
+                            <input class="visually-hidden filter-input filter-input-check-box" type="checkbox" name="galery">Галерея
+                          </li>
+                          <li>
+                            <input class="visually-hidden filter-input filter-input-check-box" type="checkbox" name="crate">Корзина   
+                          </li>
+                      </ul>
+                  </fieldset>
+                  <button type="submit" class="filter-button button">Показать</button>
+              </form>
+          </section>
+          <section class="filter-list">
+              <h2 class="visually-hidden">Фильтры</h2>
+              <b>Сортировать:</b>
+              <ul>
+                <li class="filter-option">По цене</li>
+                <li class="filter-option">По типу</li>
+                <li class="filter-option">По названию</li>
+              </ul>
+              <span>↓</span>
+              <span>↑</span>
+          </section>
+          <!-- Catalog -->
+          <section class="catalog">
+              <h2 class="visually-hidden">Список готовых шаблонов</h2>
+              <ul class="catalog-list">
+                  <li class="visually-hidden catalog-item">
+                  <img src="http://placehold.it/150x100" width="360" height="615" alt="Шаблон сайта Sedona">
+                    <h3>Sedona</h3>
+                    <p>Информационный сайт<br>
+                       для туристов      
+                    </p>
+                    <a class="button" href="#">9 900 РУБ.</a>
+                </li>
+                <li class="visually-hidden catalog-item">
+                  <img src="http://placehold.it/150x100" width="360" height="615" alt="шаблон сайта Pink App">
+                    <h3>Pink App</h3>
+                    <p>Продуктовый лендинг<br>
+                       приложения для IOS и Android      
+                    </p>
+                    <a class="button" href="#">9 900 РУБ.</a>
+                </li>
+                <li class="visually-hidden catalog-item">
+                  <img src="http://placehold.it/150x100" width="360" height="615" alt="Шаблон сайта Barbershop">
+                    <h3>Barbershop</h3>
+                    <p>Сайт салона красоты<br>
+                       Для мужчин,да.      
+                    </p>
+                    <a class="button" href="#">9 900 РУБ.</a>
+                </li>
+                <li class="visually-hidden catalog-item">
+                  <img src="http://placehold.it/150x100" width="360" height="615" alt="Шаблон сайта Mishka">
+                    <h3>Mishka</h3>
+                    <p>Интернет-магазин<br>
+                       вязаных игрушек      
+                    </p>
+                    <a class="button" href="#">9 900 РУБ.</a>
+                </li>
+                <li class="visually-hidden catalog-item">
+                  <img src="http://placehold.it/150x100" width="360" height="615" alt="Шаблон сайта A PLUS">
+                    <h3>A Plus</h3>
+                    <p>Лендинг курсов повышения<br>
+                       квалификации      
+                    </p>
+                    <a class="button" href="#">9 900 РУБ.</a>
+                </li>
+                <li class="visually-hidden catalog-item">
+                  <img src="http://placehold.it/150x100" width="360" height="615" alt="Шаблон сайта Кваст">
+                    <h3>Кваст</h3>
+                    <p>Промо-сайт производителя<br>
+                       крафтового кваса     
+                    </p>
+                    <a class="button" href="#">9 900 РУБ.</a>
+                </li>
+              </ul>
+              <ul class="pagination-list">
+                <li class="pagination-item"><a>1</a></li>
+                <li class="pagination-item pagination-item-current"><a href="#">2</a></li>
+                <li class="pagination-item"><a href="#">3</a></li>
+            </ul>
+              <span class="button pagination-button pagination-button-next">Следующая</span>
+          </section>
+      </main>
+      <footer class="main-footer">
+        <h2 class="visually-hidden">Как нас найти?</h2>
+          <section class="map">
+            <div class="container">
+              <div class="map-block">
+                <h3 class="map-block-title">Nёrds design studio</h3>
+                  <p class="map-block-info">
+                191186, Санкт-Петербург,<br>
+                ул. Б. Конюшенная, д. 19/8<br>
+                тел. +7 (812) 275-75-75
+                  </p>
+                <a href="feedback.html" class="btn map-btn">Напишите нам</a>
+              </div>
+            </div>      
+          </section>
+          <section class="bottom-footer container">
+            <div class="footer-left-column">
+              <ul>
+                <li><a href="#" class="footer-btn footer-btn-vk">Вконтакте</a></li>
+                <li><a href="#" class="footer-btn footer-btn-fb">Facebook</a></li>
+                <li><a href="#" class="footer-btn footer-btn-inst">Instagram</a></li>
+              </ul>
+            </div>
+            <section class="footer-right-column">
+                <b>Давайте дружить, это выгодно!</b>
+                <p class="footer-info">Скидка 10% для друзей из социальных сетей.</p>
+            </section>
+        </section>
+      </footer>
+      <!-- Form Write us -->
+      <section class="modal modal-write-us">
+        <h2>Напишите нам</h2>
+        <span class="modal-close">x</span>
+        <form class="name-form" action="https://echo.htmlacademy.ru" method="post">
+             <p>Ваше имя</p>
+            <p>
+          <input class="name-of-user" type="text" name="first-name" placeholder="Представьтесь, пожалуйста">
+           </p>
+             <p>Ваш e-mail</p>
+            <p>
+          <input class="email-of-user" type="text" name="email" placeholder="Для отправки ответа">
+           </p>
+             <p>Текст письма</p>
+           <p>
+            <textarea>
+              В свободной форме
+            </textarea>
+           </p>
+            <button class="button" type="post">Отправить</button>
+          </form>
+      </section>
   </body>
 </html>
