@@ -41,14 +41,17 @@
                   <fieldset>
                       <legend><h3>Сетка:</h3></legend>
                         <ul>
-                          <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="Adaptive-grid" checked> Адаптивная
+                          <li class="filter-option">  
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="Adaptive-grid" id="filter-adaptive" checked>
+                <label for="filter-adaptive">Адаптивная</label>              
                          </li>
                          <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="fixed-grid"> Фиксированная
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="fixed-grid" id="filter-fixed"> 
+                <label for="filter-fixed">Фиксированная</label>            
                          </li>
                          <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="rubber-grid"> Резиновая
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="rubber-grid" id="filter-grid"> 
+                <label for="filter-grid">Резиновая</label>            
                         </li>
                      </ul>
                   </fieldset>
@@ -56,19 +59,24 @@
                       <legend><h3>Особенности:</h3></legend>
                       <ul>
                           <li>
-                            <input class="visually-hidden filter-input filter-input-check-box" type="checkbox" name="slider" checked>Слайдер
+                            <input class="visually-hidden filter-input filter-input-check-box" type="checkbox" name="slider" id="filter-features-slider" checked>
+                            <label for="filter-features-slider">Слайдер</label>
                           </li>
                           <li>
-                            <input class="visually-hidden filter-input filter-input-check-box" type="checkbox" name="futures">Блок преимуществ
+                            <input class="visually-hidden filter-input filter-input-check-box" type="checkbox" name="features" id="filter-features-block">
+                            <label for="filter-features-block">Блок преимуществ</label>
                           </li>
                           <li>
-                            <input class="visually-hidden filter-input filter-input-check-box" type="checkbox" name="news" checked>Новости     
+                            <input class="visually-hidden filter-input filter-input-check-box" type="checkbox" name="news" id="filter-features-news" checked>
+                            <label for="filter-features-news">Новости</label>
                           </li>
                           <li>
-                            <input class="visually-hidden filter-input filter-input-check-box" type="checkbox" name="galery">Галерея
+                            <input class="visually-hidden filter-input filter-input-check-box" type="checkbox" name="galery" id="filter-features-gallery">
+                            <label for="filter-features-gallery">Галерея</label>
                           </li>
                           <li>
-                            <input class="visually-hidden filter-input filter-input-check-box" type="checkbox" name="crate">Корзина   
+                            <input class="visually-hidden filter-input filter-input-check-box" type="checkbox" name="crate" id="filter-features-crate">
+                            <label for="filter-features-crate">Корзина</label>
                           </li>
                       </ul>
                   </fieldset>
@@ -159,6 +167,7 @@
                   </p>
                 <a href="feedback.html" class="btn map-btn">Напишите нам</a>
               </div>
+                <img src="img/background-map.jpg" width="1440" height="419" alt="Офис компании по адресу ул. Б. Конюшенная, д. 19/8, Санкт-Петербург">
             </div>      
           </section>
       </main>
@@ -177,24 +186,24 @@
             </section>
         </section>
       </footer>
-      <!-- Form Write us -->
+      <!-- Write us form -->
       <section class="modal modal-write-us">
         <h2>Напишите нам</h2>
-        <span class="modal-close">x</span>
+          <button class="modal-close" type="button">Закрыть</button>
         <form class="name-form" action="https://echo.htmlacademy.ru" method="post">
-             <p>Ваше имя</p>
             <p>
-          <input class="name-of-user" type="text" name="first-name" placeholder="Представьтесь, пожалуйста">
+                <label for="modal-name">Ваше имя</label>
+                <input class="name-of-user" type="text" name="first-name" placeholder="Представьтесь, пожалуйста" id="modal-name">
            </p>
-             <p>Ваш e-mail</p>
+             
             <p>
-          <input class="email-of-user" type="text" name="email" placeholder="Для отправки ответа">
+                <label for="modal-email">Ваш e-mail</label>
+                <input class="email-of-user" type="text" name="email" placeholder="Для отправки ответа" id="modal-email">
            </p>
-             <p>Текст письма</p>
+             
            <p>
-            <textarea>
-              В свободной форме
-            </textarea>
+               <label for="modal-text">Текст письма</label>
+               <textarea id="modal-letter">В свободной форме</textarea>
            </p>
             <button class="button" type="post">Отправить</button>
           </form>
