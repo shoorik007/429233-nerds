@@ -46,6 +46,17 @@ a {
     font: inherit;
 }
 
+.btn {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    background-color: #fb565a;
+    color: white;
+
+}
+
+
+
 
 .slider-title,
 .page-title {
@@ -54,6 +65,23 @@ a {
     line-height: 55px;
     color: #000000;
 }
+
+.offer-btn-first {
+    background-color: #fb565a;
+    color: white;
+}
+
+.offer-btn-second{
+    background-color: #00ca74;
+    color: white;
+}
+
+.offer-btn-third {
+    background-color: #efc84a;
+    color: white;
+}
+
+
 
 .offer-item-info {
     font: inherit;
@@ -113,6 +141,7 @@ font: inherit;
     font-weight: 700;
     line-height: 30px;
     color: #000000;
+    text-transform: uppercase;
 
 }
 
@@ -148,6 +177,8 @@ font: inherit;
     line-height: 45px;
     color: #000000;
 }
+
+
 
 .modal-write-us label{
     font-size: 16px;
@@ -233,9 +264,21 @@ font: inherit;
 .filter-list a:focus,
 .filter-list a:active {
     color: red;
-    
 
 }
+
+.filter-button {
+    color: #000000;
+    background-color: #eeeeee;
+
+}
+
+.pagination-button {
+    color: #000000;
+    background-color: #eeeeee;
+}
+
+.
 
 /*.filter-list .current {
     font-size: 14px;
@@ -246,8 +289,28 @@ font: inherit;
 }
 */
 
-.catalog ul {
-    list-style: none;
+.catalog-list{
+     list-style: none;
+}
+
+.lol {
+    text-align: center;
+
+}
+
+.catalog-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.catalog-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #a1a1a1;
+    
 }
 
 .pagination-list {
@@ -286,8 +349,9 @@ font: inherit;
 }
 
 
-.visually-hidden {
+/*.visually-hidden {
     color: green;
 }
+*/
 
 
