@@ -173,6 +173,7 @@ a {
     font-size: 45px;
     font-weight: 700;
     line-height: 11px;
+    color: #000000;
 
 }
 
@@ -447,8 +448,272 @@ a {
 
 
 /*.visually-hidden {
-    color: green;
+    
 }
 */
+
+
+/* Сеточные стили */
+/* Header */
+.main-header {
+    /* Временно */
+    outline-color: red;
+    outline-style: dotted;
+    
+    min-height: 115px;
+    
+}
+
+.main-navigation {
+    /* Временно */
+    outline-color: green;
+    outline-style: dotted;
+    
+    min-height: 115px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.main-header-logo {
+    /* Временно */
+    outline-color: yellow;
+    outline-style: dotted;
+    
+    
+    width: 160px;
+    height: 65px;
+    
+    margin-top: 50px;
+    margin-left: 140px;
+
+}
+
+.site-navigation {
+    /* Временно */
+    outline-color: black;
+    outline-style: dotted;
+    
+    min-height: 70px;
+    width: 880px; /*820*/
+ 
+    
+    margin: 0;
+    margin-left: 200px;
+    padding: 0;
+    
+    list-style: none;
+    
+}
+
+/* Slides */
+.slider-container {
+    /* Временно */
+    outline-color: purple;
+    outline-style: dotted;
+    
+    margin: 0;
+    padding: 0;
+    
+    
+    min-height: 430px;
+    
+    
+}
+
+.slider-container-inputs {
+    /* Временно */
+    outline-color: navy;
+    outline-style: dotted;
+
+}
+
+.slider-item {
+    /* Временно */
+    outline-color: greenyellow;
+    outline-style: dotted;
+    
+    display: flex;
+    
+    
+}
+
+.slider-left-column {
+    margin-left: 140px;
+    margin-top: 82px;
+
+}
+
+/* offer */
+.offer {
+    /* Временно */
+    outline-color: aqua;
+    outline-style: dotted;
+    
+   
+    
+    margin-top: 32px;
+    margin-bottom: 82px;
+    
+    display: flex;
+   
+    
+
+}
+
+.offer-item {
+     /* Временно */
+    outline-color: darkgreen;
+    outline-style: dotted;
+    
+    min-height: 160px;
+    
+    margin-left: 140px;
+}
+
+
+/* detail */
+.detail {
+    /* Временно */
+    outline-color: saddlebrown;
+    outline-style: dotted;
+    
+    
+    display: flex;
+    flex-direction: row;
+    
+    margin-bottom: 80px;
+
+}
+
+.detail-left-column {
+    /* Временно */
+    outline-color: mediumaquamarine;
+    outline-style: dotted;
+    
+    
+    margin-left: 140px;
+    min-height: 375px;
+
+}
+
+.detail-right-column {
+    /* Временно */
+    outline-color: deeppink;
+    outline-style: dotted;
+    
+    margin-left: 140px;
+
+}
+
+.partners-list {
+    /* Временно */
+    outline-color: blue;
+    outline-style: dotted;
+    
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.partners li:nth-child(1) {
+    margin-left: 171px;
+    margin-bottom: 50px;
+}
+
+.partners li:nth-child(2) {
+    margin-left: 96px;
+    margin-bottom: 45px;
+}
+
+.partners li:nth-child(3) {
+    margin-left: 103px;
+    margin-bottom: 65px;
+}
+
+.partners li:nth-child(4) {
+    margin-left: 121px;
+    margin-bottom: 45px;
+
+}
+
+/*Map*/
+.map-container {
+    /* Временно */
+    outline-color: lawngreen;
+    outline-style: dotted;
+    
+    min-width: 1440px;
+    min-height: 416px;
+    background-image: url(../img/background-map.jpg);
+    background-repeat: no-repeat;
+    
+    display: flex;
+    
+    
+}
+
+.map-block {
+    /* Временно */
+    outline-color: rebeccapurple;
+    outline-style: dotted;
+    
+    background-color: white;
+    
+    
+    min-height: 308px;
+    
+    margin-left: 140px;
+    margin-top: 55px;
+    
+    padding-top: 40px;
+    padding-right: 75px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+
+}
+
+
+/* Footer */
+
+.bottom-footer {
+    /* Временно */
+    outline-color: rebeccapurple;
+    outline-style: dotted;
+    
+    min-height: 218px;
+    
+    display: flex;
+}
+
+.footer-left-column {
+    /* Временно */
+    outline-color: brown;
+    outline-style: dotted;
+    
+    margin-left: 140px;
+}
+
+.footer-left-column ul {
+    list-style: none;
+    
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.footer-right-column {
+    /* Временно */
+    outline-color: gold;
+    outline-style: dotted;
+    
+    margin-left: 140px;
+
+
+}
 
 
