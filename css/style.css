@@ -508,7 +508,7 @@ a {
 }
 
 .wrapper-container {
-    width: 1160px;
+    width: 1200px;
     margin: 0 auto;
     padding: 0 10px;
 
@@ -516,13 +516,12 @@ a {
 
 
 .main-navigation-wrapper {
-    width: 1440px;
+    width: 100%;
     min-height: 135px;
     
     
 
 }
-
 
 .main-navigation-wrapper .wrapper-container {
   display: flex;
