@@ -474,9 +474,10 @@ a {
     
     display: flex;
     flex-direction: row;
-    
-    
+    justify-content: space-around;
 }
+
+
 
 .main-header-logo {
     /* Временно */
@@ -508,20 +509,11 @@ a {
 }
 
 .wrapper-container {
-    width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 0 10px;
-
 }
 
-
-.main-navigation-wrapper {
-    width: 100%;
-    min-height: 135px;
-    
-    
-
-}
 
 .main-navigation-wrapper .wrapper-container {
   display: flex;
