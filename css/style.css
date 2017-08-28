@@ -44,6 +44,7 @@ a {
 .slider-container {
     background-color: #eeeeee;
     font: inherit;
+    
 }
 
 .btn {
@@ -470,8 +471,10 @@ a {
     outline-style: dotted;
     
     min-height: 115px;
+    
     display: flex;
     flex-direction: row;
+    
     
 }
 
@@ -482,6 +485,7 @@ a {
     
     width: 160px;
     height: 65px;
+    
     
     margin-top: 50px;
     
@@ -503,24 +507,24 @@ a {
     list-style: none;
 }
 
+.wrapper-container {
+    width: 1160px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+}
 
 
 .main-navigation-wrapper {
-    width: 100%;
+    width: 1440px;
     min-height: 135px;
     
     
 
 }
 
-.main-navigation-wrapper-container {
-    width: 1440px;
-    margin: 0 auto;
-    padding: 0 10px;
 
-}
-
-.main-navigation-wrapper .main-navigation-wrapper-container {
+.main-navigation-wrapper .wrapper-container {
   display: flex;
   justify-content: space-between;
 
@@ -539,7 +543,6 @@ a {
     
     
     min-height: 430px;
-    
     
 }
 
@@ -596,7 +599,7 @@ a {
     min-height: 160px;
     
     margin: 0 auto;
-    /* margin-left: 140px;*/
+    
 }
 
 
