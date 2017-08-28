@@ -483,6 +483,8 @@ a {
     width: 160px;
     height: 65px;
     
+    margin-top: 50px;
+    
 
 }
 
@@ -501,25 +503,26 @@ a {
     list-style: none;
 }
 
-.main-navigation-wrapper-container {
-    
-     margin: 0 auto;
-    
-}
 
 
 .main-navigation-wrapper {
-    width: 1200px;
-    min-height: 70px;
+    width: 100%;
+    min-height: 135px;
     
-    display: flex;
-    justify-content: space-between;
+    
 
 }
 
 .main-navigation-wrapper-container {
-    width: 100px;
+    width: 1440px;
     margin: 0 auto;
+    padding: 0 10px;
+
+}
+
+.main-navigation-wrapper .main-navigation-wrapper-container {
+  display: flex;
+  justify-content: space-between;
 
 }
 
