@@ -501,13 +501,6 @@ a {
     list-style: none;
 }
 
-
-.main-navigation-wrapper {
-    
-    min-height: 70px;
-
-}
-
 .main-navigation-wrapper-container {
     
      margin: 0 auto;
@@ -515,9 +508,20 @@ a {
 }
 
 
+.main-navigation-wrapper {
+    width: 1200px;
+    min-height: 70px;
+    
+    display: flex;
+    justify-content: space-between;
 
+}
 
+.main-navigation-wrapper-container {
+    width: 100px;
+    margin: 0 auto;
 
+}
 
 
 
