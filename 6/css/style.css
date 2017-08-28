@@ -44,6 +44,7 @@ a {
 .slider-container {
     background-color: #eeeeee;
     font: inherit;
+    
 }
 
 .btn {
@@ -470,8 +471,10 @@ a {
     outline-style: dotted;
     
     min-height: 115px;
+    
     display: flex;
     flex-direction: row;
+    
     
 }
 
@@ -480,12 +483,12 @@ a {
     outline-color: yellow;
     outline-style: dotted;
     
-    
     width: 160px;
     height: 65px;
     
+    
     margin-top: 50px;
-    margin-left: 140px;
+    
 
 }
 
@@ -499,29 +502,34 @@ a {
  
     
     margin: 0;
-    margin-left: 200px;
     padding: 0;
     
     list-style: none;
 }
 
-.list-container {
-    width: 835px;
-    
+.wrapper-container {
+    width: 1200px;
     margin: 0 auto;
+    padding: 0 10px;
+
 }
+
 
 .main-navigation-wrapper {
-    /* Временно для сетки */
-    min-height: 70px;
-    
     width: 100%;
-  
+    min-height: 135px;
+    
+    
+
 }
 
-.main-navigation-wrapper .list-container {
+.main-navigation-wrapper .wrapper-container {
   display: flex;
+  justify-content: space-between;
+
 }
+
+
 
 /* Slides */
 .slider-container {
@@ -534,7 +542,6 @@ a {
     
     
     min-height: 430px;
-    
     
 }
 
@@ -591,7 +598,7 @@ a {
     min-height: 160px;
     
     margin: 0 auto;
-    /* margin-left: 140px;*/
+    
 }
 
 
