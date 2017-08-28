@@ -506,6 +506,15 @@ a {
     
 }
 
+.list-container {
+    width: 835px;
+    
+    margin: 0 auto;
+    
+}
+
+
+
 /* Slides */
 .slider-container {
     /* Временно */
@@ -602,7 +611,6 @@ a {
     outline-color: deeppink;
     outline-style: dotted;
     
-    margin-left: 140px;
 
 }
 
@@ -621,22 +629,18 @@ a {
 }
 
 .partners li:nth-child(1) {
-    margin-left: 171px;
     margin-bottom: 50px;
 }
 
 .partners li:nth-child(2) {
-    margin-left: 96px;
     margin-bottom: 45px;
 }
 
 .partners li:nth-child(3) {
-    margin-left: 103px;
     margin-bottom: 65px;
 }
 
 .partners li:nth-child(4) {
-    margin-left: 121px;
     margin-bottom: 45px;
 
 }
