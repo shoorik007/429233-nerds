@@ -480,12 +480,9 @@ a {
     outline-color: yellow;
     outline-style: dotted;
     
-    
     width: 160px;
     height: 65px;
     
-    margin-top: 50px;
-    margin-left: 140px;
 
 }
 
@@ -499,29 +496,30 @@ a {
  
     
     margin: 0;
-    margin-left: 200px;
     padding: 0;
     
     list-style: none;
 }
 
-.list-container {
-    width: 835px;
-    
-    margin: 0 auto;
-}
 
 .main-navigation-wrapper {
-    /* Временно для сетки */
-    min-height: 70px;
     
-    width: 100%;
-  
+    min-height: 70px;
+
 }
 
-.main-navigation-wrapper .list-container {
-  display: flex;
+.main-navigation-wrapper-container {
+    
+     margin: 0 auto;
+    
 }
+
+
+
+
+
+
+
 
 /* Slides */
 .slider-container {
