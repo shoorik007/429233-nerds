@@ -452,10 +452,23 @@ a {
 }
 
 
-/*.visually-hidden {
-    
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
-*/
 
 
 /* Сеточные стили */
@@ -591,6 +604,8 @@ a {
     outline-color: aqua;
     outline-style: dotted;
     
+    
+    
    
     
     margin-top: 32px;
@@ -660,6 +675,8 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
+    margin-bottom: 130px;
 
 }
 
@@ -692,9 +709,9 @@ a {
     background-repeat: no-repeat;
     
     display: flex;
-    
-    
+    margin-bottom: 70px;
 }
+
 
 .map-block {
     /* Временно */
@@ -749,12 +766,114 @@ a {
     
 }
 
+
 /* Сеточные стили каталога */
-.inner-page {
-    /* Временно для сетки */
+
+.page-title-center {
+    /* Временно */
+    outline-color: gold;
+    outline-style: dotted;
     
+    background-color: #eeeeee;
+    min-height: 240px;
+    
+    margin-bottom: 65px;
+
+}
+
+.filter {
+     /* Временно */
+    outline-color: green;
+    outline-style: dotted;
+    min-height: 840px;
+    
+    width: 260px;
+
+}
+
+.filter-list {
+    /* Временно */
+    outline-color: green;
+    outline-style: dotted;
+    min-height: 35px;
+    
+    width: 760px;
+    
+    display: flex;
+    flex-direction: row;
+
+}
+
+.catalog {
+    /* Временно */
+    outline-color: firebrick;
+    outline-style: dotted;
+    
+    margin: 0;
+    padding: 0;
+    
+    width: 1440px;
+    min-height: 1915px;
+    
+
+}
+
+.catalog-columns {
+    /* Временно */
+    outline-color: blue;
+    outline-style: dotted;
+    
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 65px;
+}
+
+.catalog-list {
+    /* Временно */
+    outline-color: orangered;
+    outline-style: dotted;
+    
+    display: flex;
+    flex-wrap: wrap;
+   
+    padding: 0;
+    margin: 0;
+    
+    list-style: none;
+
+}
+
+.catalog-item {
+    /* Временно */
+    outline-color: darkviolet;
+    outline-style: dotted;
+    
+    width: 360px;
+    min-height: 620px;
+    
+    margin-bottom: 35px;
+    margin-right: 40px;
+
+}
+
+.catalog-item:nth-child(2n) {
+     margin-right: 0;
  
+
 }
 
 
+.pagination-list {
+    /* Временно */
+    outline-color: fuchsia;
+    outline-style: dotted;
+    min-height: 55px;
+    
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+  
+}
 
