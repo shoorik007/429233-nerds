@@ -23,21 +23,25 @@ a {
     background-color: #eeeeee;
 }
 
-.site-navigation {
+.site-navigation,
+.user-navigation {
     list-style: none;
 }
 
-.site-navigation a {
+.site-navigation a,
+.user-navigation a {
     color: #000000;
     text-transform: uppercase;
 
 }
 
-.site-navigation a:hover {
+.site-navigation a:hover,
+.user-navigation a:hover {
  color: #fb565a;
 }
 
-.site-navigation a:focus {
+.site-navigation a:focus,
+.user-navigation a:focus {
  color: #cdcdcd;
 }
 
@@ -474,7 +478,9 @@ a {
     
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-a;
+    align-items: center;
+
 }
 
 
@@ -487,10 +493,6 @@ a {
     width: 160px;
     height: 65px;
     
-    
-    margin-top: 50px;
-    
-
 }
 
 .site-navigation {
@@ -499,27 +501,46 @@ a {
     outline-style: dotted;
     
     min-height: 70px;
-    width: 880px; /*820*/
+    width: 500px; /*820*/
  
     
     margin: 0;
     padding: 0;
     
     list-style: none;
+    
+}
+
+.user-navigation {
+    /* Временно */
+    outline-color: black;
+    outline-style: dotted;
+    
+    margin: 0;
+    padding: 0;
+    
+    width: 180px;
+    
+    list-style: none;
+    
+    margin-left: auto;
+    
+   
 }
 
 .wrapper-container {
-    width: 100%;
+    width: 1440px;
     margin: 0 auto;
-    padding: 0 10px;
+    
 }
 
 
-.main-navigation-wrapper .wrapper-container {
+ /*.wrapper-container {
   display: flex;
-  justify-content: space-between;
+ justify-content: space-between;  
+ 
 
-}
+}*/
 
 
 
@@ -555,7 +576,6 @@ a {
 }
 
 .slider-left-column {
-    margin-left: 140px;
     margin-top: 82px;
 
 }
@@ -577,6 +597,7 @@ a {
     margin-bottom: 82px;
     
     display: flex;
+    justify-content: space-between;
    
     
 
@@ -588,8 +609,8 @@ a {
     outline-style: dotted;
     
     min-height: 160px;
+    width: 300px;
     
-    margin: 0 auto;
     
 }
 
@@ -602,7 +623,7 @@ a {
     
     
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-direction: row;
     
     margin-bottom: 80px;
@@ -615,7 +636,6 @@ a {
     outline-style: dotted;
     
     
-    margin-left: 140px;
     min-height: 375px;
 
 }
@@ -624,8 +644,6 @@ a {
     /* Временно */
     outline-color: deeppink;
     outline-style: dotted;
-    
-    margin: 0 auto;
 
 }
 
@@ -640,25 +658,25 @@ a {
     padding: 0px;
     
     display: flex;
-    justify-content: space-around;
     flex-direction: row;
-    
+    justify-content: space-around;
+
 }
 
 .partners li:nth-child(1) {
-    margin-bottom: 50px;
+   
 }
 
 .partners li:nth-child(2) {
-    margin-bottom: 45px;
+    
 }
 
 .partners li:nth-child(3) {
-    margin-bottom: 65px;
+   
 }
 
 .partners li:nth-child(4) {
-    margin-bottom: 45px;
+    
 
 }
 
@@ -688,9 +706,6 @@ a {
     
     min-height: 308px;
     
-    margin-left: 140px;
-    margin-top: 55px;
-    
     padding-top: 40px;
     padding-right: 75px;
     padding-bottom: 15px;
@@ -709,6 +724,7 @@ a {
     min-height: 218px;
     
     display: flex;
+    justify-content: space-between;
 }
 
 .footer-left-column {
@@ -716,7 +732,6 @@ a {
     outline-color: brown;
     outline-style: dotted;
     
-    margin-left: 140px;
 }
 
 .footer-left-column ul {
@@ -732,8 +747,6 @@ a {
     outline-color: gold;
     outline-style: dotted;
     
-    margin: 0 auto;
-
 }
 
 /* Сеточные стили каталога */
