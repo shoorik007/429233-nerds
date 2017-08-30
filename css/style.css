@@ -23,27 +23,32 @@ a {
     background-color: #eeeeee;
 }
 
-.site-navigation {
+.site-navigation,
+.user-navigation {
     list-style: none;
 }
 
-.site-navigation a {
+.site-navigation a,
+.user-navigation a {
     color: #000000;
     text-transform: uppercase;
 
 }
 
-.site-navigation a:hover {
+.site-navigation a:hover,
+.user-navigation a:hover {
  color: #fb565a;
 }
 
-.site-navigation a:focus {
+.site-navigation a:focus,
+.user-navigation a:focus {
  color: #cdcdcd;
 }
 
 .slider-container {
     background-color: #eeeeee;
     font: inherit;
+    
 }
 
 .btn {
@@ -173,6 +178,7 @@ a {
     font-size: 45px;
     font-weight: 700;
     line-height: 11px;
+    color: #000000;
 
 }
 
@@ -236,28 +242,22 @@ a {
     font-weight: 400px;
     line-height: 18px;
     color: #444444;
-
-}
-
-.modal-post {
-    border: none;
-}
-
-
-
-.modal-write-us label{
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 18px;
-}
-
-.modal-write-us input, textarea {
     background-color: transparent;
     border: 2px solid #e4e8e9;
 
 }
 
-.modal-write-us input:focus {
+.modal-post {
+    border: none;
+    cursor: pointer;
+}
+
+
+
+
+
+.modal-write-us input:focus,
+.modal-write-us textarea:focus{
     background-color: transparent;
     border-color: #555555;
     outline: black;
@@ -368,6 +368,7 @@ a {
     color: #000000;
     background-color: #eeeeee;
     border: none;
+    cursor: pointer;
 }
 
 .pagination-button:hover {
@@ -451,9 +452,428 @@ a {
 }
 
 
-/*.visually-hidden {
-    color: green;
-}
-*/
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
 
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+/* Сеточные стили */
+/* Header */
+.main-header {
+    /* Временно */
+    outline-color: red;
+    outline-style: dotted;
+    
+    min-height: 115px;
+    
+}
+
+.main-navigation {
+    /* Временно */
+    outline-color: green;
+    outline-style: dotted;
+    
+    min-height: 115px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-a;
+    align-items: center;
+
+}
+
+
+
+.main-header-logo {
+    /* Временно */
+    outline-color: yellow;
+    outline-style: dotted;
+    
+    width: 160px;
+    height: 65px;
+    
+}
+
+.site-navigation {
+    /* Временно */
+    outline-color: black;
+    outline-style: dotted;
+    
+    min-height: 70px;
+    width: 500px; /*820*/
+ 
+    
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+    
+}
+
+.user-navigation {
+    /* Временно */
+    outline-color: black;
+    outline-style: dotted;
+    
+    margin: 0;
+    padding: 0;
+    
+    width: 180px;
+    
+    list-style: none;
+    
+    margin-left: auto;
+    
+   
+}
+
+.wrapper-container {
+    width: 1440px;
+    margin: 0 auto;
+    
+}
+
+
+ /*.wrapper-container {
+  display: flex;
+ justify-content: space-between;  
+ 
+
+}*/
+
+
+
+/* Slides */
+.slider-container {
+    /* Временно */
+    outline-color: purple;
+    outline-style: dotted;
+    
+    margin: 0;
+    padding: 0;
+    
+    
+    min-height: 430px;
+    
+}
+
+.slider-container-inputs {
+    /* Временно */
+    outline-color: navy;
+    outline-style: dotted;
+
+}
+
+.slider-item {
+    /* Временно */
+    outline-color: greenyellow;
+    outline-style: dotted;
+    
+    display: flex;
+    
+    
+}
+
+.slider-left-column {
+    margin-top: 82px;
+
+}
+
+.slider-right-column {
+    
+   margin: 0 auto;
+}
+
+/* offer */
+.offer {
+    /* Временно */
+    outline-color: aqua;
+    outline-style: dotted;
+    
+    
+    
+   
+    
+    margin-top: 32px;
+    margin-bottom: 82px;
+    
+    display: flex;
+    justify-content: space-between;
+   
+    
+
+}
+
+.offer-item {
+     /* Временно */
+    outline-color: darkgreen;
+    outline-style: dotted;
+    
+    min-height: 160px;
+    width: 300px;
+    
+    
+}
+
+
+/* detail */
+.detail {
+    /* Временно */
+    outline-color: saddlebrown;
+    outline-style: dotted;
+    
+    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    
+    margin-bottom: 80px;
+
+}
+
+.detail-left-column {
+    /* Временно */
+    outline-color: mediumaquamarine;
+    outline-style: dotted;
+    
+    
+    min-height: 375px;
+
+}
+
+.detail-right-column {
+    /* Временно */
+    outline-color: deeppink;
+    outline-style: dotted;
+
+}
+
+/* Partners */
+.partners-list {
+    /* Временно */
+    outline-color: blue;
+    outline-style: dotted;
+    
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    margin-bottom: 130px;
+
+}
+
+.partners li:nth-child(1) {
+   
+}
+
+.partners li:nth-child(2) {
+    
+}
+
+.partners li:nth-child(3) {
+   
+}
+
+.partners li:nth-child(4) {
+    
+
+}
+
+/*Map*/
+.map-container {
+    /* Временно */
+    outline-color: lawngreen;
+    outline-style: dotted;
+    
+    min-width: 1440px;
+    min-height: 416px;
+    background-image: url(../img/background-map.jpg);
+    background-repeat: no-repeat;
+    
+    display: flex;
+    margin-bottom: 70px;
+}
+
+
+.map-block {
+    /* Временно */
+    outline-color: rebeccapurple;
+    outline-style: dotted;
+    
+    background-color: white;
+    
+    
+    min-height: 308px;
+    
+    padding-top: 40px;
+    padding-right: 75px;
+    padding-bottom: 15px;
+    padding-left: 50px;
+
+}
+
+
+/* Footer */
+
+.bottom-footer {
+    /* Временно */
+    outline-color: rebeccapurple;
+    outline-style: dotted;
+    
+    min-height: 218px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-left-column {
+    /* Временно */
+    outline-color: brown;
+    outline-style: dotted;
+    
+}
+
+.footer-left-column ul {
+    list-style: none;
+    
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.footer-right-column {
+    /* Временно */
+    outline-color: gold;
+    outline-style: dotted;
+    
+}
+
+
+/* Сеточные стили каталога */
+
+.page-title-center {
+    /* Временно */
+    outline-color: gold;
+    outline-style: dotted;
+    
+    background-color: #eeeeee;
+    min-height: 240px;
+    
+    margin-bottom: 65px;
+
+}
+
+.filter {
+     /* Временно */
+    outline-color: green;
+    outline-style: dotted;
+    min-height: 840px;
+    
+    width: 260px;
+
+}
+
+.filter-list {
+    /* Временно */
+    outline-color: green;
+    outline-style: dotted;
+    min-height: 35px;
+    
+    width: 760px;
+    
+    display: flex;
+    flex-direction: row;
+
+}
+
+.catalog {
+    /* Временно */
+    outline-color: firebrick;
+    outline-style: dotted;
+    
+    margin: 0;
+    padding: 0;
+    
+    width: 1440px;
+    min-height: 1915px;
+    
+
+}
+
+.catalog-columns {
+    /* Временно */
+    outline-color: blue;
+    outline-style: dotted;
+    
+    display: flex;
+    justify-content: space-between;
+    
+    margin-bottom: 65px;
+}
+
+.catalog-list {
+    /* Временно */
+    outline-color: orangered;
+    outline-style: dotted;
+    
+    display: flex;
+    flex-wrap: wrap;
+   
+    padding: 0;
+    margin: 0;
+    
+    list-style: none;
+
+}
+
+.catalog-item {
+    /* Временно */
+    outline-color: darkviolet;
+    outline-style: dotted;
+    
+    width: 360px;
+    min-height: 620px;
+    
+    margin-bottom: 35px;
+    margin-right: 40px;
+
+}
+
+.catalog-item:nth-child(2n) {
+     margin-right: 0;
+ 
+
+}
+
+
+.pagination-list {
+    /* Временно */
+    outline-color: fuchsia;
+    outline-style: dotted;
+    min-height: 55px;
+    
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+  
+}
 
