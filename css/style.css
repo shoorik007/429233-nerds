@@ -9,6 +9,7 @@
     color: #283136;
 
     background-color: white;
+    
 }
 
 a {
@@ -698,15 +699,33 @@ input[type="radio"].visually-hidden {
 }
 
 /*Map*/
+
+.map {
+    /* Временно */
+    outline-color: fuchsia;
+    outline-style: dotted;
+    
+    min-width: 1440px;
+    min-height: 420px;
+    
+    background-image: url(../img/background-map.jpg);
+    background-repeat: no-repeat;
+
+
+}
+
+
+
 .map-container {
     /* Временно */
     outline-color: lawngreen;
     outline-style: dotted;
     
-    min-width: 1440px;
-    min-height: 416px;
-    background-image: url(../img/background-map.jpg);
-    background-repeat: no-repeat;
+    min-width: 1330px;
+    min-height: 305px;
+    
+    /*background-image: url(../img/background-map.jpg);
+    background-repeat: no-repeat;*/
     
     display: flex;
     margin-bottom: 70px;
@@ -812,7 +831,7 @@ input[type="radio"].visually-hidden {
     margin: 0;
     padding: 0;
     
-    width: 1440px;
+    width: 780px;
     min-height: 1915px;
     
 
@@ -827,6 +846,17 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     
     margin-bottom: 65px;
+}
+
+.catalog-colums-right {
+    /* Временно */
+    outline-color: lightseagreen;
+    outline-style: dotted;
+    
+    
+    display: flex;
+    flex-direction: column;
+    
 }
 
 .catalog-list {
