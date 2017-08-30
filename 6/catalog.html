@@ -10,24 +10,33 @@
 </head>
   <body>
     <!-- Header -->
-      <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/nerds-logo.svg" width="160" height="76" alt="Логотип веб-студии «Nerds»">
+    <header class="main-header">
+      <nav class="main-navigation wrapper-container">
+        <a class="main-header-logo">
+          <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип веб-студии «Nerds»">
         </a>
-        <ul class="site-navigation">
-           <li><a href="studio.html">Студия</a></li>
-           <li><a href="clients.html">Клиенты</a></li>
-           <li><a class="site-navigation-current">Магазин</a></li>
-           <li><a href="contacts.html">Контакты</a></li>
-           <li><a href="cart.html">Корзина</a></li>
-        </ul>
-          <h1 class="page-title">Магазин готовых шаблонов</h1>
+          <ul class="site-navigation">
+            <li><a href="studio.html">Студия</a></li>
+            <li><a href="clients.html">Клиенты</a></li>
+            <li><a class="site-navigation-current">Магазин</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
+          </ul>
+          <ul class="user-navigation">
+              <a href="cart.html">Корзина</a>
+          </ul>
        </nav>
     </header>
+      
+      
       <!-- Main -->
       <!-- Filtes -->
-      <main class="container">
+      <main class="container wrapper-container">
+          <div class="page-title-center">
+              <h1 class="page-title">Магазин готовых шаблонов</h1>
+          </div>
+          
+          
+          <div class="catalog-columns">
           <section class="filters">
               <h2 class="visually-hidden">Фильр услуг</h2>
               <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=pricecount.value">
@@ -84,6 +93,7 @@
                   <button class="btn filter-button" type="submit">Показать</button>
               </form>
           </section>
+          
           <section class="filter-list">
               <h2 class="visually-hidden">Фильтры</h2>
               <h3 class="filter-title">Сортировать:</h3>
@@ -100,7 +110,7 @@
           <section class="catalog">
               <h2 class="visually-hidden">Список готовых шаблонов</h2>
               <ul class="catalog-list">
-                  <li class="visually-hidden catalog-item">
+                  <li class="catalog-item">
                   <img src="img/img-sedona.jpg" width="360" height="615" alt="Шаблон сайта Sedona">
                     <h3 class="catalog-title">Sedona</h3>
                     <p class="catalog-description">
@@ -109,7 +119,7 @@
                     </p>
                     <a class="btn catalog-button" href="#">9 900 РУБ.</a>
                 </li>
-                <li class="visually-hidden catalog-item">
+                <li class="catalog-item">
                   <img src="img/img-pink.jpg" width="360" height="615" alt="шаблон сайта Pink App">
                     <h3 class="catalog-title">Pink App</h3>
                     <p class="catalog-description">
@@ -118,7 +128,7 @@
                     </p>
                     <a class="btn catalog-button" href="#">9 900 РУБ.</a>
                 </li>
-                <li class="visually-hidden catalog-item">
+                <li class="catalog-item">
                   <img src="img/img-barbershop.jpg" width="360" height="615" alt="Шаблон сайта Barbershop">
                     <h3 class="catalog-title">Barbershop</h3>
                     <p class="catalog-description">
@@ -127,7 +137,7 @@
                     </p>
                     <a class="btn catalog-button" href="#">9 900 РУБ.</a>
                 </li>
-                <li class="visually-hidden catalog-item">
+                <li class="catalog-item">
                   <img src="img/img-mishka.jpg" width="360" height="615" alt="Шаблон сайта Mishka">
                     <h3 class="catalog-title">Mishka</h3>
                     <p class="catalog-description">
@@ -136,7 +146,7 @@
                     </p>
                     <a class="btn catalog-button" href="#">9 900 РУБ.</a>
                 </li>
-                <li class="visually-hidden catalog-item">
+                <li class="catalog-item">
                   <img src="img/img-aplus.jpg" width="360" height="615" alt="Шаблон сайта A PLUS">
                     <h3 class="catalog-title">A Plus</h3>
                     <p class="catalog-description">
@@ -145,7 +155,7 @@
                     </p>
                     <a class="btn catalog-button" href="#">9 900 РУБ.</a>
                 </li>
-                <li class="visually-hidden catalog-item">
+                <li class="catalog-item">
                   <img src="img/img-kvast.jpg" width="360" height="615" alt="Шаблон сайта Кваст">
                     <h3 class="catalog-title">Кваст</h3>
                     <p class="catalog-description">
@@ -155,35 +165,37 @@
                     <a class="btn catalog-button" href="#">9 900 РУБ.</a>
                 </li>
               </ul>
-                
+            
               <ul class="pagination-list">
                 <li class="pagination-item"><a>1</a></li>
                 <li class="pagination-item pagination-item-current"><a href="#">2</a></li>
                 <li class="pagination-item"><a href="#">3</a></li>
+                <li><button class="btn pagination-button pagination-button-next" type="button">Следующая</button></li>
             </ul>
-              <button class="btn pagination-button pagination-button-next" type="button">Следующая</button>
           </section>
-          <!-- Map -->
+          </div>
+          
+         <!-- Map -->
           <section class="map">
            <h2 class="visually-hidden">Как нас найти?</h2>
-            <div class="container">
+            <div class="map-container">
               <div class="map-block">
                 <h3 class="map-block-title">Nёrds design studio</h3>
                   <p class="map-block-info">
                 191186, Санкт-Петербург,<br>
                 ул. Б. Конюшенная, д. 19/8<br>
-    
                 тел. +7 (812) 275-75-75
                   </p>
                 <a href="feedback.html" class="btn map-btn">Напишите нам</a>
               </div>
-                <img src="img/background-map.jpg" width="1440" height="419" alt="Офис компании по адресу ул. Б. Конюшенная, д. 19/8, Санкт-Петербург">
+                <!--<img src="img/background-map.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Б. Конюшенная, д. 19/8, Санкт-Петербург">-->
             </div>      
           </section>
       </main>
+      
       <!-- Footer -->
       <footer class="main-footer">
-          <section class="bottom-footer container">
+          <section class="bottom-footer wrapper-container">
             <div class="footer-left-column">
               <ul>
                 <li><a href="#" class="footer-btn footer-btn-vk">Вконтакте</a></li>
