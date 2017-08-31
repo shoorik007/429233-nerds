@@ -34,17 +34,27 @@
               <h1 class="page-title">Магазин готовых шаблонов</h1>
           </div>
           
-          
           <div class="catalog-columns">
           <section class="filters">
               <h2 class="visually-hidden">Фильр услуг</h2>
               <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="priceoutput.value=pricecount.value">
-                 <fieldset>
+                 <fieldset class="range-filter">
                      <legend>Стоимость:</legend>
-                      <input type="range" id="pricecount" name="pricecount" min="0" max="25000" step="1">
-                      <div class="output-area">
-                        От <span class="output-area-pice">0</span>
-                        До <output name="priceoutput"><span class="output-area-pice"></span></output>
+                      <div class="range-controls">
+                          <div class="scale"><div class="bar" style="width: 70%;"></div></div>
+                          
+                          <div class="toggle min-toggle"></div>
+                          <div class="toggle max-toggle"></div>
+                     </div>
+                     
+                     <div class="price-controls">
+                       <label class="left" for="min-price">
+                           от <input class="min-price" name="min-pice" type="text" value="0" id="min-price">
+                       </label>   
+                        
+                       <label class="right" for="max-price">
+                           до <input  name="max-pice" type="text" value="15000" id="max-price">
+                       </label>     
                      </div>
                   </fieldset>
                   <fieldset>
