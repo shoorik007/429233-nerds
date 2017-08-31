@@ -91,19 +91,20 @@ img {
 
 }
 
-.slider-container {
-    background-color: #eeeeee;
-    font: inherit;
-}
+
 
 /*Новая разметка слайдов*/
 .slider {
     position: relative;
     width: 1160px;
     height: 435px;
-    border: 1px dotted black;
     background: #eeeeee;
     
+}
+
+.slider-info {
+    padding-top: 34px;
+
 }
 
 .slider input[type="radio"] {
@@ -156,7 +157,7 @@ img {
 .slide-text {
     width: 525px;
     min-height: 285px;
-    padding: 90px 0;
+    margin-top: 45px;
     color: #283136;
     
 }
@@ -172,7 +173,7 @@ img {
 .slide .btn {
     display: inline-block;
     width: 240px;
-    padding: 10px 0;
+    padding: 19px 0;
     margin-top: 25px;
     font-size: 16px;
     color: white;
@@ -331,6 +332,8 @@ img {
 
 .offer-item-info {
     font: inherit;
+    
+    padding-top: 20px;
 }
 
 .offer-item-tittle {
@@ -371,6 +374,8 @@ img {
     line-height: 24px;
     text-transform: uppercase;
     color: #000000;
+    
+    padding-left: 18px;
 }
 
 
@@ -997,30 +1002,30 @@ input[type="radio"].visually-hidden {
 
 /* offer */
 .offer {
-    /* Временно */
-    outline-color: aqua;
-    outline-style: dotted;
     
-    margin-top: 32px;
+    
+    margin-top: 85px;
     margin-bottom: 82px;
+    
+    max-width: 1100px;
     
     display: flex;
     justify-content: space-between;
-   
     
+    background: url(../img/line.png) no-repeat;
+    background-position: bottom;
 
 }
 
 .offer-item {
-     /* Временно */
-    outline-color: darkgreen;
-    outline-style: dotted;
+    
     
     min-height: 160px;
     width: 300px;
-    
+    padding-bottom: 80px;
     
 }
+
 
 
 /* detail */
@@ -1029,22 +1034,58 @@ input[type="radio"].visually-hidden {
     outline-color: saddlebrown;
     outline-style: dotted;
     
+    position: relative;
     
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     
-    margin-bottom: 80px;
+    
+    background: url(../img/line.png) no-repeat;
+    background-position: bottom;
+    
+    padding-bottom: 75px;
 
 }
+
+.detail li::before {
+    content: "";
+    
+    position: absolute;
+    
+    width: 25px;
+    height: 2px;
+    
+    background-color: red;
+}
+
+.detail li:nth-child(1)::before {
+    
+    top: 305px;
+    left: 0;
+}
+
+
+.detail li:nth-child(2)::before {
+    
+    top: 328px;
+    left: 0;
+}
+
+.detail li:nth-child(3)::before {
+    
+    top: 353px;
+    left: 0;
+}
+
 
 .detail-left-column {
     /* Временно */
     outline-color: mediumaquamarine;
     outline-style: dotted;
     
-    
-    min-height: 375px;
+    min-width: 660px;
+    min-height: 382px;
 
 }
 
@@ -1052,14 +1093,46 @@ input[type="radio"].visually-hidden {
     /* Временно */
     outline-color: deeppink;
     outline-style: dotted;
+    
+    min-width: 360px;
 
 }
 
+
+.detail-right-column table {
+    margin-top: 45px;
+
+}
+
+.detail-right-column td {
+    padding-top: 32px;
+
+
+}
+
+
+
+
 /* Partners */
-.partners-list {
+
+.partners {
     /* Временно */
     outline-color: blue;
     outline-style: dotted;
+    
+    margin-top: 45px;
+    
+    background: url(../img/line.png) no-repeat;
+    background-position: bottom;
+    
+    padding-bottom: 50px;
+    
+    min-height: 135px;
+
+}
+
+.partners-list {
+    
     
     list-style: none;
     margin: 0px;
@@ -1068,10 +1141,9 @@ input[type="radio"].visually-hidden {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
-    margin-bottom: 130px;
 
 }
+
 
 
 /*Map*/
@@ -1086,6 +1158,8 @@ input[type="radio"].visually-hidden {
     
     background-image: url(../img/background-map.jpg);
     background-repeat: no-repeat;
+    
+    margin-top: 80px;
 
 
 }
@@ -1097,14 +1171,13 @@ input[type="radio"].visually-hidden {
     outline-color: lawngreen;
     outline-style: dotted;
     
-    min-width: 1330px;
-    min-height: 305px;
+    width: 320px;
+    height: 310px;
     
     /*background-image: url(../img/background-map.jpg);
     background-repeat: no-repeat;*/
     
     display: flex;
-    margin-bottom: 70px;
 }
 
 
@@ -1127,22 +1200,28 @@ input[type="radio"].visually-hidden {
 
 
 /* Footer */
+.main-footer {
+    margin-top: 70px;
+    min-height: 85px;
+
+}
 
 .bottom-footer {
     /* Временно */
     outline-color: rebeccapurple;
     outline-style: dotted;
     
-    min-height: 218px;
     
     display: flex;
-    justify-content: space-between;
+   /*  justify-content: space-between;*/
+    
 }
 
 .footer-left-column {
     /* Временно */
     outline-color: brown;
     outline-style: dotted;
+    align-self: center;
     
 }
 
@@ -1159,6 +1238,120 @@ input[type="radio"].visually-hidden {
     outline-color: gold;
     outline-style: dotted;
     
+    margin-left: 140px;
+    
+}
+
+
+.modal {
+    position: fixed;
+    
+    color: #000000;
+    
+    background-color: #ffffff;
+    
+    box-shadow: 
+        inset 0 3px 7px rgba(0, 0, 0, 0.35),
+        0 20px 40px rgba(0, 0, 0, 0.75);
+}
+
+.modal-write-us {
+    top: 320px;
+    left: 50%;
+    
+    margin-left: -480px;
+    
+    width: 760px;
+    
+    padding: 75px 100px;
+    
+}
+
+.modal-close {
+    position: absolute;
+    top: 125px;
+    right: 85px;
+    
+    width: 30px;
+    height: 26px;
+    
+    font-size: 0;
+    
+    background-color: ;
+    
+    border: 0;
+    
+    cursor: pointer;
+
+}
+
+.modal path:hover {
+    fill: #fb565a;
+
+}
+
+.modal path:active {
+    fill: rgba(251, 86, 90, 0.1);
+
+}
+
+.modal-post {
+    
+    display: inline-block;
+    width: 260px;
+    padding: 19px 0;
+    margin-top: 25px;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    background: #fb565a;
+    border-radius: 3px;
+
+}
+
+.form-line {
+    /* Временно */
+    outline-color: gold;
+    outline-style: dotted;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.name-form input[type="text"],
+.name-form input[type="password"] {
+  box-sizing: border-box;
+  width: 360px;
+  padding: 14px 16px;
+  padding-right: 130px;
+  
+  font: inherit;
+  color: #000000;
+    
+  border: 2px solid #e4e8e9; 
+}
+
+.name-form input:hover {
+  border-color: #cdd0d2;
+}
+
+
+.name-form input:focus {
+  border-color: #555555;
+}
+
+.modal textarea {
+    height: 110px;
+    width: 760px;
+    
+    padding-left: 15px;
+    padding-top: 10px;
+
+
 }
 
 
