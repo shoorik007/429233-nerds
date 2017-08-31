@@ -29,6 +29,9 @@ img {
     background-color: #eeeeee;
 }
 
+
+
+
 .site-navigation,
 .user-navigation {
     list-style: none;
@@ -43,8 +46,6 @@ img {
     
     vertical-align: middle;
     
-    padding: 40px 45px;
-
 }
 
 .user-navigation .cart-enter {
@@ -57,7 +58,7 @@ img {
     content: "";
     position: absolute;
     
-    top: 45px;
+    top: 5px;
     left: 65px;
     
     width: 18px;
@@ -102,6 +103,7 @@ img {
     height: 435px;
     border: 1px dotted black;
     background: #eeeeee;
+    
 }
 
 .slider input[type="radio"] {
@@ -152,8 +154,9 @@ img {
 }
 
 .slide-text {
-    width: 380px;
-    padding: 30px 0;
+    width: 525px;
+    min-height: 285px;
+    padding: 90px 0;
     color: #283136;
     
 }
@@ -336,6 +339,7 @@ img {
     line-height: 30px;
     color: #000000;
     text-transform: uppercase;
+
 }
 
 
@@ -449,6 +453,36 @@ a:focus .icon-in
     line-height: 18px;
     color: #666666;
 }
+
+.map .map-btn {
+    display: inline-block;
+    width: 220px;
+    padding: 10px 0;
+    margin-top: 25px;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    background: #fb565a;
+    border-radius: 3px;
+}
+
+.map .map-btn:hover {
+    display: inline-block;
+    width: 220px;
+    padding: 10px 0;
+    margin-top: 25px;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    background: #e74246;
+    border-radius: 3px;
+}
+
+
 
 .footer-left-column ul {
     list-style: none;
@@ -863,14 +897,21 @@ input[type="radio"].visually-hidden {
     
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    
+    min-height: 15px;
+    min-width: 440px; /*820*/
     
     
-    min-height: 70px;
-    width: 700px; /*820*/
- 
+   
     
     margin: 0;
     padding: 0;
+    
+    margin-top: 20px;
+    
+    margin-left: 200px;
+    
     
     list-style: none;
     
@@ -891,6 +932,8 @@ input[type="radio"].visually-hidden {
     list-style: none;
     
     margin-left: auto;
+    
+    margin-top: 20px;
     
    
 }
@@ -957,10 +1000,6 @@ input[type="radio"].visually-hidden {
     /* Временно */
     outline-color: aqua;
     outline-style: dotted;
-    
-    
-    
-   
     
     margin-top: 32px;
     margin-bottom: 82px;
@@ -1034,22 +1073,6 @@ input[type="radio"].visually-hidden {
 
 }
 
-.partners li:nth-child(1) {
-   
-}
-
-.partners li:nth-child(2) {
-    
-}
-
-.partners li:nth-child(3) {
-   
-}
-
-.partners li:nth-child(4) {
-    
-
-}
 
 /*Map*/
 
