@@ -334,6 +334,8 @@ img {
     font: inherit;
     
     padding-top: 20px;
+    
+    padding-right: 50px;
 }
 
 .offer-item-tittle {
@@ -358,6 +360,7 @@ img {
     color: #000000;
 }
 
+
 .detail-list-title {
     text-transform: uppercase;
     color: #000000;
@@ -376,6 +379,7 @@ img {
     color: #000000;
     
     padding-left: 18px;
+    
 }
 
 
@@ -725,9 +729,21 @@ a:focus .icon-in
 }
 
 .filter-button {
+    display: inline-block;
+    width: 260px;
+    padding: 19px 0;
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 600;
     color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
     background-color: #eeeeee;
     border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    
 
 }
 
@@ -749,9 +765,19 @@ a:focus .icon-in
 
 
 .pagination-button {
+    display: inline-block;
+    width: 260px;
+    padding: 19px 0;
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 600;
     color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
     background-color: #eeeeee;
     border: none;
+    border-radius: 3px;
     cursor: pointer;
 }
 
@@ -800,6 +826,9 @@ a:focus .icon-in
     
 }
 
+
+
+/*
 .pagination-list {
     list-style: none;
 }
@@ -816,10 +845,11 @@ a:focus .icon-in
 
 .pagination-item a:focus {
     background-color: #d5d5d5;
-    box-shadow: inset 0 3px 0px 0px rgba(0, 1, 1, 0,1);
-    color: rgba(0, 0, 0, 0,3);
+    box-shadow: inset 0 3px 0px 0px rgba(0, 1, 1, 0.1);
+    color: rgba(0, 0, 0, 0.3);
     
 }
+
 
 .pagination-item a:active {
 
@@ -834,7 +864,7 @@ a:focus .icon-in
 .pagination-item-current a:active {
   
 }
-
+*/
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -1028,6 +1058,8 @@ input[type="radio"].visually-hidden {
 
 
 
+
+
 /* detail */
 .detail {
     /* Временно */
@@ -1045,6 +1077,16 @@ input[type="radio"].visually-hidden {
     background-position: bottom;
     
     padding-bottom: 75px;
+
+}
+
+.detail-title {
+    padding-right: 50px;
+
+}
+
+.detail-info {
+    padding-right: 150px;
 
 }
 
@@ -1128,6 +1170,7 @@ input[type="radio"].visually-hidden {
     padding-bottom: 50px;
     
     min-height: 135px;
+    
 
 }
 
@@ -1141,6 +1184,8 @@ input[type="radio"].visually-hidden {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    
+    align-items: center;
 
 }
 
@@ -1202,7 +1247,7 @@ input[type="radio"].visually-hidden {
 /* Footer */
 .main-footer {
     margin-top: 70px;
-    min-height: 85px;
+    min-height: 200px;
 
 }
 
@@ -1250,9 +1295,7 @@ input[type="radio"].visually-hidden {
     
     background-color: #ffffff;
     
-    box-shadow: 
-        inset 0 3px 7px rgba(0, 0, 0, 0.35),
-        0 20px 40px rgba(0, 0, 0, 0.75);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
 }
 
 .modal-write-us {
@@ -1264,6 +1307,8 @@ input[type="radio"].visually-hidden {
     width: 760px;
     
     padding: 75px 100px;
+    
+    display: none;
     
 }
 
@@ -1277,7 +1322,7 @@ input[type="radio"].visually-hidden {
     
     font-size: 0;
     
-    background-color: ;
+    background: none;
     
     border: 0;
     
@@ -1364,8 +1409,11 @@ input[type="radio"].visually-hidden {
     
     background-color: #eeeeee;
     min-height: 240px;
+    min-width: 1160px;
     
-    margin-bottom: 65px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle; 
 
 }
 
@@ -1375,7 +1423,11 @@ input[type="radio"].visually-hidden {
     outline-style: dotted;
     min-height: 840px;
     
-    width: 300px;
+    min-width: 300px;
+    min-height: 780px;
+    
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -1389,17 +1441,60 @@ input[type="radio"].visually-hidden {
     
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 
 }
+
+.filter-list ul {
+    min-width: 300px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.icons {
+    min-width: 45px;
+    min-height: 30px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    align-items: center;
+
+}
+
+.icon-up,
+.icon-down {
+    fill: rgba(35, 31, 32, 0.2);
+}
+
+.icon-up:hover,
+.icon-down:hover {
+    fill: #a6a6a6;
+}
+
+.icon-up:focus,
+.icon-down:focus,
+.icon-up:active,
+.icon-down:active {
+    fill: #231f20;
+}
+
 
 .catalog {
     /* Временно */
     outline-color: firebrick;
     outline-style: dotted;
     
+    
     margin: 0;
     padding: 0;
     
+    
+    margin-top: 55px;
     width: 780px;
     min-height: 1915px;
     
@@ -1414,7 +1509,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     justify-content: space-between;
     
-    margin-bottom: 65px;
+    margin-top: 65px;
 }
 
 .catalog-colums-right {
@@ -1433,6 +1528,8 @@ input[type="radio"].visually-hidden {
     outline-color: orangered;
     outline-style: dotted;
     
+    height: 1915px;
+    
     display: flex;
     flex-wrap: wrap;
    
@@ -1449,30 +1546,184 @@ input[type="radio"].visually-hidden {
     outline-style: dotted;
     
     width: 360px;
-    min-height: 620px;
+    height: 615px;
     
     margin-bottom: 35px;
     margin-right: 40px;
+    
+    position: relative;
 
 }
+
+.catalog-item:nth-of-type(1) {
+    background: url("../img/img-sedona.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    
+}
+
+.catalog-item:nth-of-type(2) {
+    background: url("../img/img-pink.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    
+}
+
+.catalog-item:nth-of-type(3) {
+    background: url("../img/img-barbershop.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    
+}
+
+.catalog-item:nth-of-type(4) {
+    background: url("../img/img-mishka.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    
+}
+
+.catalog-item:nth-of-type(5) {
+    background: url("../img/img-aplus.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    
+}
+
+.catalog-item:nth-of-type(6) {
+    background: url("../img/img-kvast.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    
+}
+
+
 
 .catalog-item:nth-child(2n) {
      margin-right: 0;
  
-
 }
 
 
-.pagination-list {
-    /* Временно */
-    outline-color: fuchsia;
-    outline-style: dotted;
-    min-height: 55px;
+
+
+.browser {
     
-    padding: 0;
-    margin: 0;
-
-    list-style: none;
-  
+    fill: rgba(77, 77, 77, 0.12);
 }
+
+.catalog-item:hover .browser {
+    fill: rgb(77, 77, 77);
+}
+
+
+.catalog-details {
+    position: absolute;
+    bottom: 0px;
+    
+    width: 360px;
+    height: 232px;
+    
+    display: none;
+    
+    background-color: #eeeeee;
+    overflow: hidden;
+
+}
+
+
+
+.catalog-item:hover .catalog-details {
+    display: block;
+
+}
+
+.catalog-item:hover {
+    box-shadow: 0 6px 15px rgba(0, 1 , 1, 0.25);
+
+}
+
+.catalog-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    color: black;
+    
+    text-align: center;
+}
+
+.catalog-description {
+    
+    text-align: center;
+}
+
+.catalog-button {
+    display: inline-block;
+    width: 200px;
+    padding: 19px 0;
+    margin-top: 25px;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    background: #fb565a;
+    border-radius: 3px;
+    
+    margin-left: 80px;
+}
+
+
+
+.paginator {
+    /* Временно */
+    outline-color: green;
+    outline-style: dotted;
+    
+    width: 480px;
+    padding: 0px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+
+.paginator a {
+    display: inline-block;
+    min-width: 50px;
+    height: 50px;
+    padding: 0 10px;
+    background: #eeeeee;
+    border-radius: 3px;
+    color: #000000;
+    
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.paginator a:hover {
+    background-color: #dfdfdf;
+}
+
+.paginator a:focus {
+    background-color: #d5d5d5;
+    box-shadow: inset 0px 3px 0px 0px rgba(0, 1, 1, 0.1);
+    color: rgba(0, 0, 0, 0.3);
+    
+}
+
+.paginator-current{
+    
+
+}
+
+
+
+
+
+
+
+
+
 
