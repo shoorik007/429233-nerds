@@ -1234,7 +1234,7 @@ input[type="radio"].visually-hidden {
 /*Map*/
 
 .map {
-    width: 1440px;
+    width: 100%;
     min-height: 420px;
     
     background-image: url(../img/background-map.jpg);
@@ -1249,6 +1249,8 @@ input[type="radio"].visually-hidden {
 
 .map-container {
     width: 320px;
+    
+    
     height: 310px;
     
     /*background-image: url(../img/background-map.jpg);
@@ -1267,6 +1269,7 @@ input[type="radio"].visually-hidden {
     padding-right: 75px;
     padding-bottom: 15px;
     padding-left: 50px;
+    
 
 }
 
