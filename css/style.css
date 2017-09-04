@@ -1247,9 +1247,9 @@ input[type="radio"].visually-hidden {
 
 
 
+
 .map-container {
-    width: 320px;
-    
+    width: 1160px;
     
     height: 310px;
     
@@ -1262,7 +1262,8 @@ input[type="radio"].visually-hidden {
 
 .map-block {
     background-color: white;
-
+    
+    
     min-height: 308px;
     
     padding-top: 40px;
