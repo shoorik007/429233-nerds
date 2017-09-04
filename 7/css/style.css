@@ -93,13 +93,14 @@ img {
 
 
 
+
 /*Новая разметка слайдов*/
 .slider {
     position: relative;
-    width: 1160px;
+    min-width: 1160px;
     height: 435px;
     background: #eeeeee;
-    
+
 }
 
 .slider-info {
@@ -121,7 +122,6 @@ img {
     height: 18px;
     margin-left: -100px;
     text-align: center;
-    border: 1px dotted green;
     z-index: 1000;
 }
 
@@ -438,8 +438,7 @@ img {
 
 a:focus .icon-vk,
 a:focus .icon-fb,
-a:focus .icon-in
-{
+a:focus .icon-in {
     fill: rgba(255, 255, 255, 0.3);
 
 }
@@ -669,6 +668,7 @@ a:focus .icon-in
     text-decoration-color: #f7898b;
 }
 
+
 .filter fieldset {
   border: none;
 }
@@ -760,8 +760,90 @@ a:focus .icon-in
     box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
     border: none;
     
+}
+
+
+input[type="checkbox"] {
+    display: none;
+    
+}
+
+input[type="checkbox"] + label {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    
+    margin-top: 15px;
+}
+
+input[type="checkbox"] + label::before {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: url(../img/checkbox-off.svg) no-repeat;
+    position: absolute;
+    top: 0;
+    left: -40px;
+}
+
+input[type="checkbox"]:checked + label::before {
+    background: url(../img/checkbox-on.svg) no-repeat;
+    
+}
+
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    cursor: pointer;
+    
+    margin-top: 15px;
+}
+
+input[type="radio"] + label::before {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 26px;
+    background: url(../img/radio-off.svg) no-repeat;
+    position: absolute;
+    top: 0;
+    left: -40px;
+}
+
+input[type="radio"]:checked + label::before {
+    background: url(../img/radio-on.svg) no-repeat;
+    
+    
+}
+
+
+input[type="checkbox"] + label::before,
+input[type="checkbox"]:checked + label::before,
+input[type="radio"] + label::before,
+input[type="radio"]:checked + label::before {
+    opacity: 0.4;
 
 }
+
+
+input[type="checkbox"]:hover + label::before,
+input[type="checkbox"]:hover:checked + label::before,
+input[type="radio"]:hover + label::before,
+input[type="radio"]:hover:checked + label::before {
+    opacity: 1;
+
+}
+
+
+
 
 
 .pagination-button {
@@ -823,6 +905,8 @@ a:focus .icon-in
     font-weight: 400;
     line-height: 18px;
     color: #a1a1a1;
+    
+    text-align: center;
     
 }
 
@@ -888,10 +972,6 @@ input[type="radio"].visually-hidden {
 /* Сеточные стили */
 /* Header */
 .main-header {
-    /* Временно */
-    outline-color: red;
-    outline-style: dotted;
-    
     min-height: 115px;
     
     background: #eeeeee;
@@ -901,10 +981,6 @@ input[type="radio"].visually-hidden {
 
 
 .main-navigation {
-    /* Временно */
-    outline-color: green;
-    outline-style: dotted;
-    
     min-height: 115px;
     
     display: flex;
@@ -915,21 +991,13 @@ input[type="radio"].visually-hidden {
 
 
 
-.main-header-logo {
-    /* Временно */
-    outline-color: yellow;
-    outline-style: dotted;
-    
+.main-header-logo { 
     width: 160px;
     height: 65px;
     
 }
 
 .site-navigation {
-    /* Временно */
-    outline-color: black;
-    outline-style: dotted;
-    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -953,10 +1021,6 @@ input[type="radio"].visually-hidden {
 }
 
 .user-navigation {
-    /* Временно */
-    outline-color: black;
-    outline-style: dotted;
-    
     margin: 0;
     padding: 0;
     
@@ -991,33 +1055,22 @@ input[type="radio"].visually-hidden {
 
 /* Slides */
 .slider-container {
-    /* Временно */
-    outline-color: purple;
-    outline-style: dotted;
-    
     margin: 0;
     padding: 0;
     
     
     min-height: 430px;
-    
+   
 }
 
 .slider-container-inputs {
-    /* Временно */
-    outline-color: navy;
-    outline-style: dotted;
+
 
 }
 
 .slider-item {
-    /* Временно */
-    outline-color: greenyellow;
-    outline-style: dotted;
     
     display: flex;
-    
-    
 }
 
 .slider-left-column {
@@ -1062,10 +1115,6 @@ input[type="radio"].visually-hidden {
 
 /* detail */
 .detail {
-    /* Временно */
-    outline-color: saddlebrown;
-    outline-style: dotted;
-    
     position: relative;
     
     display: flex;
@@ -1122,20 +1171,12 @@ input[type="radio"].visually-hidden {
 
 
 .detail-left-column {
-    /* Временно */
-    outline-color: mediumaquamarine;
-    outline-style: dotted;
-    
     min-width: 660px;
     min-height: 382px;
 
 }
 
 .detail-right-column {
-    /* Временно */
-    outline-color: deeppink;
-    outline-style: dotted;
-    
     min-width: 360px;
 
 }
@@ -1158,10 +1199,6 @@ input[type="radio"].visually-hidden {
 /* Partners */
 
 .partners {
-    /* Временно */
-    outline-color: blue;
-    outline-style: dotted;
-    
     margin-top: 45px;
     
     background: url(../img/line.png) no-repeat;
@@ -1194,10 +1231,6 @@ input[type="radio"].visually-hidden {
 /*Map*/
 
 .map {
-    /* Временно */
-    outline-color: fuchsia;
-    outline-style: dotted;
-    
     min-width: 1440px;
     min-height: 420px;
     
@@ -1212,10 +1245,6 @@ input[type="radio"].visually-hidden {
 
 
 .map-container {
-    /* Временно */
-    outline-color: lawngreen;
-    outline-style: dotted;
-    
     width: 320px;
     height: 310px;
     
@@ -1227,13 +1256,8 @@ input[type="radio"].visually-hidden {
 
 
 .map-block {
-    /* Временно */
-    outline-color: rebeccapurple;
-    outline-style: dotted;
-    
     background-color: white;
-    
-    
+
     min-height: 308px;
     
     padding-top: 40px;
@@ -1252,20 +1276,12 @@ input[type="radio"].visually-hidden {
 }
 
 .bottom-footer {
-    /* Временно */
-    outline-color: rebeccapurple;
-    outline-style: dotted;
-    
-    
     display: flex;
    /*  justify-content: space-between;*/
     
 }
 
 .footer-left-column {
-    /* Временно */
-    outline-color: brown;
-    outline-style: dotted;
     align-self: center;
     
 }
@@ -1279,10 +1295,6 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-right-column {
-    /* Временно */
-    outline-color: gold;
-    outline-style: dotted;
-    
     margin-left: 140px;
     
 }
@@ -1357,10 +1369,6 @@ input[type="radio"].visually-hidden {
 }
 
 .form-line {
-    /* Временно */
-    outline-color: gold;
-    outline-style: dotted;
-    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -1403,10 +1411,6 @@ input[type="radio"].visually-hidden {
 /* Сеточные стили каталога */
 
 .page-title-center {
-    /* Временно */
-    outline-color: gold;
-    outline-style: dotted;
-    
     background-color: #eeeeee;
     min-height: 240px;
     min-width: 1160px;
@@ -1418,9 +1422,6 @@ input[type="radio"].visually-hidden {
 }
 
 .filters {
-     /* Временно */
-    outline-color: green;
-    outline-style: dotted;
     min-height: 840px;
     
     min-width: 300px;
@@ -1432,9 +1433,6 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-list {
-    /* Временно */
-    outline-color: green;
-    outline-style: dotted;
     min-height: 35px;
     
     width: 760px;
@@ -1485,11 +1483,6 @@ input[type="radio"].visually-hidden {
 
 
 .catalog {
-    /* Временно */
-    outline-color: firebrick;
-    outline-style: dotted;
-    
-    
     margin: 0;
     padding: 0;
     
@@ -1502,10 +1495,6 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-columns {
-    /* Временно */
-    outline-color: blue;
-    outline-style: dotted;
-    
     display: flex;
     justify-content: space-between;
     
@@ -1513,21 +1502,12 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-colums-right {
-    /* Временно */
-    outline-color: lightseagreen;
-    outline-style: dotted;
-    
-    
     display: flex;
     flex-direction: column;
     
 }
 
 .catalog-list {
-    /* Временно */
-    outline-color: orangered;
-    outline-style: dotted;
-    
     height: 1915px;
     
     display: flex;
@@ -1541,10 +1521,6 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item {
-    /* Временно */
-    outline-color: darkviolet;
-    outline-style: dotted;
-    
     width: 360px;
     height: 615px;
     
@@ -1552,50 +1528,12 @@ input[type="radio"].visually-hidden {
     margin-right: 40px;
     
     position: relative;
-
-}
-
-.catalog-item:nth-of-type(1) {
-    background: url("../img/img-sedona.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
     
+    text-align: center;
+
 }
 
-.catalog-item:nth-of-type(2) {
-    background: url("../img/img-pink.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    
-}
 
-.catalog-item:nth-of-type(3) {
-    background: url("../img/img-barbershop.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    
-}
-
-.catalog-item:nth-of-type(4) {
-    background: url("../img/img-mishka.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    
-}
-
-.catalog-item:nth-of-type(5) {
-    background: url("../img/img-aplus.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    
-}
-
-.catalog-item:nth-of-type(6) {
-    background: url("../img/img-kvast.jpg");
-    background-repeat: no-repeat;
-    background-position: bottom;
-    
-}
 
 
 
@@ -1652,10 +1590,7 @@ input[type="radio"].visually-hidden {
     text-align: center;
 }
 
-.catalog-description {
-    
-    text-align: center;
-}
+
 
 .catalog-button {
     display: inline-block;
@@ -1670,16 +1605,11 @@ input[type="radio"].visually-hidden {
     background: #fb565a;
     border-radius: 3px;
     
-    margin-left: 80px;
 }
 
 
 
 .paginator {
-    /* Временно */
-    outline-color: green;
-    outline-style: dotted;
-    
     width: 480px;
     padding: 0px;
     margin: 0;
