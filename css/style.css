@@ -17,7 +17,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  
   height: auto;
 }
 
@@ -108,7 +108,9 @@ img {
 }
 
 .slider-info {
-    padding-top: 34px;
+   margin: 0;
+    
+   padding-top: 27px;
 
 }
 
@@ -164,6 +166,7 @@ img {
     margin-top: 45px;
     color: #283136;
     
+    
 }
 
 .slide-title {
@@ -171,14 +174,15 @@ img {
     line-height: 1;
     font-weight: 700;
     color: black;
+    
+    margin-top: 50px;
 
 }
 
 .slide .btn {
     display: inline-block;
     width: 240px;
-    padding: 19px 0;
-    margin-top: 25px;
+    padding: 16px 0;
     font-size: 16px;
     color: white;
     text-transform: uppercase;
@@ -186,12 +190,14 @@ img {
     text-decoration: none;
     background: #fb565a;
     border-radius: 3px;
+    
+    margin-top: 40px;
 }
 
 .slide:nth-child(1) {
     background-image: url('../img/slide-1.png');
     background-repeat: no-repeat;
-    background-position: 100% 10px;
+    background-position: 100% 25px;
 }
 
 .slide:nth-child(2) {
@@ -203,7 +209,7 @@ img {
 .slide:nth-child(3) {
     background-image: url('../img/slide-3.png');
     background-repeat: no-repeat;
-    background-position: 100% 10px;
+    background-position: 100% 25px;
 }
 
 
@@ -260,8 +266,8 @@ img {
     
     display: inline-block;
     width: 160px;
-    padding: 10px 0;
-    margin-top: 30px;
+    padding: 16px 0;
+    margin-top: 17px;
     font-size: 16px;
     text-transform: uppercase;
     text-align: center;
@@ -286,8 +292,8 @@ img {
     
     display: inline-block;
     width: 160px;
-    padding: 10px 0;
-    margin-top: 30px;
+    padding: 16px 0;
+    margin-top: 17px;
     font-size: 16px;
     text-transform: uppercase;
     text-align: center;
@@ -312,8 +318,8 @@ img {
     
     display: inline-block;
     width: 160px;
-    padding: 10px 0;
-    margin-top: 30px;
+    padding: 16px 0;
+    margin-top: 17px;
     font-size: 16px;
     text-transform: uppercase;
     text-align: center;
@@ -337,8 +343,6 @@ img {
 .offer-item-info {
     font: inherit;
     
-    padding-top: 20px;
-    
     padding-right: 50px;
 }
 
@@ -348,12 +352,17 @@ img {
     line-height: 30px;
     color: #000000;
     text-transform: uppercase;
+    
+    margin: 0;
+    margin-top: 20px;
 
 }
 
 
 .detail {
     font: inherit;
+    
+    height: 490px;
 }
 
 .detail-title,
@@ -373,6 +382,8 @@ img {
 .detail-list {
     list-style: none;
     line-height: 24px;
+    
+    margin: 0;
 }
 
 .table-title {
@@ -382,7 +393,8 @@ img {
     text-transform: uppercase;
     color: #000000;
     
-    padding-left: 18px;
+    text-align: center;
+    margin: 0;
     
 }
 
@@ -392,12 +404,15 @@ img {
     font-weight: 700;
     line-height: 11px;
     color: #000000;
+    
+    padding-right: 20px;
 
 }
 
 .partners-list {
     list-style: none;
 }
+
 
 .footer-btn {
     width: 85px;
@@ -413,6 +428,7 @@ img {
     
     border-radius: 50%;
 }
+
 
 .main-footer ul {
   display: flex;
@@ -457,6 +473,9 @@ a:focus .icon-in {
     line-height: 30px;
     color: #000000;
     text-transform: uppercase;
+    
+    margin: 0;
+    margin-top: 50px;
 
 }
 
@@ -464,12 +483,18 @@ a:focus .icon-in {
     font-size: 16px;
     line-height: 18px;
     color: #666666;
+    margin: 0;
+    padding-top: 26px;
+}
+
+.tel {
+    padding-top: 18px;
 }
 
 .map .map-btn {
     display: inline-block;
     width: 220px;
-    padding: 10px 0;
+    padding: 16px 0;
     margin-top: 25px;
     font-size: 16px;
     color: white;
@@ -478,12 +503,14 @@ a:focus .icon-in {
     text-decoration: none;
     background: #fb565a;
     border-radius: 3px;
+    margin: 0;
+    margin-top: 34px;
 }
 
 .map .map-btn:hover {
     display: inline-block;
     width: 220px;
-    padding: 10px 0;
+    padding: 16px 0;
     margin-top: 25px;
     font-size: 16px;
     color: white;
@@ -492,6 +519,7 @@ a:focus .icon-in {
     text-decoration: none;
     background: #e74246;
     border-radius: 3px;
+    margin-top: 34px;
 }
 
 
@@ -506,6 +534,8 @@ a:focus .icon-in {
     font-weight: 700;
     line-height: 36px;
     color: #000000;
+    margin: 0;
+    
 
 }
 
@@ -514,6 +544,8 @@ a:focus .icon-in {
     font-weight: 400;
     line-height: 22px;
     color: #444444;
+    margin: 0;
+    margin-top: 13px;
 }
 
 .modal-write-us h2{
@@ -573,6 +605,8 @@ a:focus .icon-in {
     background: #f1f1f1;
     border-radius: 5px;
     overflow: hidden;
+    
+    margin-top: 50px;
 }
 
 .range-controls .scale {
@@ -667,6 +701,7 @@ a:focus .icon-in {
 
 
 
+
 .site-navigation-current {
     text-decoration: underline;
     text-decoration-color: #f7898b;
@@ -675,11 +710,14 @@ a:focus .icon-in {
 
 .filter fieldset {
   border: none;
+  margin-bottom: 54px;
 }
 
 .filter ul {
   list-style: none;
   line-height: 20px;
+  margin: 0;
+  
 }
 
 .filters label {
@@ -707,10 +745,12 @@ a:focus .icon-in {
     font-weight: 700;
     line-height: 18px;
     text-transform: uppercase;
+    margin: 0;
 }
 
 .filter-list ul {
     list-style: none;
+    margin: 0;
 }
 
 .filter-list a {
@@ -736,7 +776,6 @@ a:focus .icon-in {
     display: inline-block;
     width: 260px;
     padding: 19px 0;
-    margin-top: 50px;
     font-size: 16px;
     font-weight: 600;
     color: #000000;
@@ -808,6 +847,7 @@ input[type="radio"] + label {
     vertical-align: top;
     cursor: pointer;
     
+    
     margin-top: 15px;
 }
 
@@ -818,7 +858,7 @@ input[type="radio"] + label::before {
     height: 26px;
     background: url(../img/radio-off.svg) no-repeat;
     position: absolute;
-    top: 0;
+    top: -4px;
     left: -40px;
 }
 
@@ -853,7 +893,7 @@ input[type="radio"]:hover:checked + label::before {
 .pagination-button {
     display: inline-block;
     width: 260px;
-    padding: 19px 0;
+    padding: 16px 0;
     margin-top: 50px;
     font-size: 16px;
     font-weight: 600;
@@ -1087,13 +1127,10 @@ input[type="radio"].visually-hidden {
    margin: 0 auto;
 }
 
+
 /* offer */
 .offer {
-    
-    
-    margin-top: 85px;
-    margin-bottom: 82px;
-    
+
     max-width: 1100px;
     
     display: flex;
@@ -1101,13 +1138,15 @@ input[type="radio"].visually-hidden {
     
     background: url(../img/line.png) no-repeat;
     background-position: bottom;
+    
+    margin-top: 80px;
 
 }
 
 .offer-item {
     
     
-    min-height: 160px;
+    min-height: 348px;
     width: 300px;
     padding-bottom: 80px;
     
@@ -1129,18 +1168,34 @@ input[type="radio"].visually-hidden {
     background: url(../img/line.png) no-repeat;
     background-position: bottom;
     
-    padding-bottom: 75px;
-
+    padding-bottom: 40px;
+    
 }
 
 .detail-title {
     padding-right: 50px;
+    margin: 0;
+    margin-top: 75px;
 
 }
 
 .detail-info {
     padding-right: 150px;
+    margin: 0;
+    margin-top: 30px;
 
+}
+
+.detail-list-title {
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 24px;
+
+}
+
+.detail-list li {
+    padding-bottom: 25px;
+    
 }
 
 .detail li::before {
@@ -1156,20 +1211,20 @@ input[type="radio"].visually-hidden {
 
 .detail li:nth-child(1)::before {
     
-    top: 305px;
+    top: 340px;
     left: 0;
 }
 
 
 .detail li:nth-child(2)::before {
     
-    top: 328px;
+    top: 390px;
     left: 0;
 }
 
 .detail li:nth-child(3)::before {
     
-    top: 353px;
+    top: 440px;
     left: 0;
 }
 
@@ -1187,7 +1242,7 @@ input[type="radio"].visually-hidden {
 
 
 .detail-right-column table {
-    margin-top: 45px;
+    margin-top: 52px;
 
 }
 
@@ -1197,21 +1252,21 @@ input[type="radio"].visually-hidden {
 
 }
 
+.detail-header-image {
+    margin-top: 55px;
+
+}
+
 
 
 /* Partners */
 
 .partners {
-    margin-top: 45px;
-    
     background: url(../img/line.png) no-repeat;
     background-position: bottom;
     
-    padding-bottom: 50px;
-    
-    min-height: 135px;
-    
 
+    min-height: 135px;
 }
 
 .partners-list {
@@ -1220,6 +1275,7 @@ input[type="radio"].visually-hidden {
     list-style: none;
     margin: 0px;
     padding: 0px;
+    margin-top: 45px;
     
     display: flex;
     flex-direction: row;
@@ -1229,6 +1285,17 @@ input[type="radio"].visually-hidden {
 
 }
 
+.partners-list a{
+    opacity: 0.2;
+}
+
+.partners-list a:hover{
+    opacity: 1;
+}
+
+.partners-list a:focus{
+    opacity: 0.1;
+}
 
 
 /*Map*/
@@ -1239,13 +1306,16 @@ input[type="radio"].visually-hidden {
     
     background-image: url(../img/background-map.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     
     margin-top: 80px;
-
-
+    
 }
 
 
+
+
+/*<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.5086631257755!2d30.321220179380127!3d59.93805850208495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sru!4v1504627299289" width="1440" height="418" frameborder="0" style="border:0" allowfullscreen></iframe>*/
 
 
 .map-container {
@@ -1257,21 +1327,21 @@ input[type="radio"].visually-hidden {
     background-repeat: no-repeat;*/
     
     display: flex;
+    
+    
 }
 
 
 .map-block {
     background-color: white;
-    
-    
+
     min-height: 308px;
-    
-    padding-top: 40px;
-    padding-right: 75px;
-    padding-bottom: 15px;
+
+    padding-right: 50px;
     padding-left: 50px;
     
-
+    margin-top: 55px;
+    
 }
 
 
@@ -1317,6 +1387,8 @@ input[type="radio"].visually-hidden {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
 }
 
+
+
 .modal-write-us {
     top: 320px;
     left: 50%;
@@ -1327,7 +1399,7 @@ input[type="radio"].visually-hidden {
     
     padding: 75px 100px;
     
-    display: none;
+    display: block;
     
 }
 
@@ -1537,10 +1609,17 @@ input[type="radio"].visually-hidden {
     position: relative;
     
     text-align: center;
-
+    top: -12px;
+   
 }
 
+.catalog-item svg {
+    position: relative;
+    top: 8px;
+        
+    
 
+}
 
 
 
@@ -1551,9 +1630,7 @@ input[type="radio"].visually-hidden {
 
 
 
-
 .browser {
-    
     fill: rgba(77, 77, 77, 0.12);
 }
 
@@ -1564,7 +1641,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-details {
     position: absolute;
-    bottom: 0px;
+    bottom: -10px;
     
     width: 360px;
     height: 232px;
@@ -1624,14 +1701,15 @@ input[type="radio"].visually-hidden {
 }
 
 
-.paginator a {
+
+.paginator a:not(.current-page) {
     display: inline-block;
-    min-width: 50px;
+    width: 50px;
     height: 50px;
-    padding: 0 10px;
     background: #eeeeee;
     border-radius: 3px;
     color: #000000;
+    font-weight: 600;
     
     line-height: 50px;
     text-align: center;
@@ -1650,10 +1728,25 @@ input[type="radio"].visually-hidden {
     
 }
 
-.paginator-current{
-    
 
+.current-page {
+    display: inline-block;
+    
+    border: 3px solid #dbdbdb;
+    background-color: none;
+    
+    width: 44px;
+    height: 44px;
+    
+    color: #000000;
+    font-weight: 600;
+    border-radius: 3px;
+    line-height: 50px;
+    
+    text-align: center;
+    vertical-align: bottom;
 }
+
 
 
 
