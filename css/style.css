@@ -175,7 +175,7 @@ img {
     font-weight: 700;
     color: black;
     
-    margin-top: 50px;
+    margin-top: 80px;
 
 }
 
@@ -416,7 +416,7 @@ img {
 
 .footer-btn {
     width: 85px;
-    height: 80px;
+    height: 78px;
     
     background-color: #e1e1e1;
     
@@ -432,7 +432,7 @@ img {
 
 .main-footer ul {
   display: flex;
-  width: 300px;
+  width: 280px;
   list-style: none;
     
   flex-wrap: wrap;
@@ -1029,7 +1029,7 @@ input[type="radio"].visually-hidden {
     
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
 
 }
 
@@ -1046,7 +1046,7 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
     justify-content: space-between;
     
-    min-height: 15px;
+    
     min-width: 440px; /*820*/
     
     
@@ -1055,8 +1055,8 @@ input[type="radio"].visually-hidden {
     margin: 0;
     padding: 0;
     
-    margin-top: 20px;
-    
+    margin-bottom: 5px;
+
     margin-left: 200px;
     
     
@@ -1074,6 +1074,7 @@ input[type="radio"].visually-hidden {
     
     list-style: none;
     
+    margin-bottom: 5px;
     margin-left: auto;
     
     margin-top: 20px;
@@ -1399,7 +1400,7 @@ input[type="radio"].visually-hidden {
     
     padding: 75px 100px;
     
-    display: block;
+    display: none;
     
 }
 
