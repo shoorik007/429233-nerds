@@ -175,7 +175,7 @@ img {
     font-weight: 700;
     color: black;
     
-    margin-top: 50px;
+    margin-top: 80px;
 
 }
 
@@ -197,19 +197,19 @@ img {
 .slide:nth-child(1) {
     background-image: url('../img/slide-1.png');
     background-repeat: no-repeat;
-    background-position: 100% 25px;
+    background-position: 95% 16px;
 }
 
 .slide:nth-child(2) {
     background-image: url('../img/slide-2.png');
     background-repeat: no-repeat;
-    background-position: 100% 10px;
+    background-position: 95% 16px;
 }
 
 .slide:nth-child(3) {
     background-image: url('../img/slide-3.png');
     background-repeat: no-repeat;
-    background-position: 100% 25px;
+    background-position: 95% 25px;
 }
 
 
@@ -416,7 +416,7 @@ img {
 
 .footer-btn {
     width: 85px;
-    height: 80px;
+    height: 78px;
     
     background-color: #e1e1e1;
     
@@ -432,7 +432,7 @@ img {
 
 .main-footer ul {
   display: flex;
-  width: 300px;
+  width: 280px;
   list-style: none;
     
   flex-wrap: wrap;
@@ -557,7 +557,7 @@ a:focus .icon-in {
 
 .modal-write-us label {
     font-size: 16px;
-    font-weight: 700px;
+    font-weight: 700;
     line-height: 18px;
     color: #000000;
 }
@@ -570,6 +570,8 @@ a:focus .icon-in {
     color: #444444;
     background-color: transparent;
     border: 2px solid #e4e8e9;
+    
+    margin-top: 12px;
 
 }
 
@@ -703,8 +705,7 @@ a:focus .icon-in {
 
 
 .site-navigation-current {
-    text-decoration: underline;
-    text-decoration-color: #f7898b;
+    border-bottom: 2px solid #f7898b;
 }
 
 
@@ -751,6 +752,8 @@ a:focus .icon-in {
 .filter-list ul {
     list-style: none;
     margin: 0;
+    
+   
 }
 
 .filter-list a {
@@ -1029,7 +1032,7 @@ input[type="radio"].visually-hidden {
     
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-end;
 
 }
 
@@ -1046,7 +1049,7 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
     justify-content: space-between;
     
-    min-height: 15px;
+    
     min-width: 440px; /*820*/
     
     
@@ -1055,8 +1058,8 @@ input[type="radio"].visually-hidden {
     margin: 0;
     padding: 0;
     
-    margin-top: 20px;
-    
+    margin-bottom: 5px;
+
     margin-left: 200px;
     
     
@@ -1074,6 +1077,7 @@ input[type="radio"].visually-hidden {
     
     list-style: none;
     
+    margin-bottom: 5px;
     margin-left: auto;
     
     margin-top: 20px;
@@ -1253,7 +1257,9 @@ input[type="radio"].visually-hidden {
 }
 
 .detail-header-image {
-    margin-top: 55px;
+    margin: 0;
+    margin-bottom: 26px;
+    margin-top: 44px;
 
 }
 
@@ -1270,7 +1276,7 @@ input[type="radio"].visually-hidden {
 }
 
 .partners-list {
-    
+    position: relative;
     
     list-style: none;
     margin: 0px;
@@ -1285,7 +1291,23 @@ input[type="radio"].visually-hidden {
 
 }
 
+.partners-list li:not(:last-child)::after{
+    content: "";
+    position: absolute;
+    
+    top: 40px;
+    
+    width: 52px;
+    height: 2px;
+    
+    background-image: url("../img/vertical-line.png");
+    
+    transform: rotate(90deg);
+}
+
+
 .partners-list a{
+    padding-right: 25px;
     opacity: 0.2;
 }
 
@@ -1399,23 +1421,23 @@ input[type="radio"].visually-hidden {
     
     padding: 75px 100px;
     
-    display: block;
+    display: none;
     
 }
 
 .modal-close {
     position: absolute;
+    
     top: 125px;
     right: 85px;
     
-    width: 30px;
-    height: 26px;
+    
     
     font-size: 0;
     
     background: none;
     
-    border: 0;
+    border: none;
     
     cursor: pointer;
 
@@ -1467,6 +1489,12 @@ input[type="radio"].visually-hidden {
   border: 2px solid #e4e8e9; 
 }
 
+.right-half {
+    margin-left: 40px;
+
+
+}
+
 .name-form input:hover {
   border-color: #cdd0d2;
 }
@@ -1478,13 +1506,14 @@ input[type="radio"].visually-hidden {
 
 .modal textarea {
     height: 110px;
-    width: 760px;
+    width: 740px;
     
     padding-left: 15px;
-    padding-top: 10px;
+    padding-top: 12px;
 
 
 }
+
 
 
 /* Сеточные стили каталога */
@@ -1497,7 +1526,11 @@ input[type="radio"].visually-hidden {
     display: inline-block;
     text-align: center;
     vertical-align: middle; 
+    
+}
 
+.page-title-center h1 {
+     margin-top: 80px;
 }
 
 .filters {
@@ -1512,7 +1545,6 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-list {
-    min-height: 35px;
     
     width: 760px;
     
@@ -1523,18 +1555,19 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-list ul {
-    min-width: 300px;
+    min-width: 270px;
     
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
+    padding-left: 210px;
 
 }
 
 .icons {
-    min-width: 45px;
-    min-height: 30px;
-    
+    min-width: 35px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
