@@ -1257,7 +1257,9 @@ input[type="radio"].visually-hidden {
 }
 
 .detail-header-image {
-    margin-top: 55px;
+    margin: 0;
+    margin-bottom: 26px;
+    margin-top: 44px;
 
 }
 
