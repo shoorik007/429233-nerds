@@ -197,19 +197,19 @@ img {
 .slide:nth-child(1) {
     background-image: url('../img/slide-1.png');
     background-repeat: no-repeat;
-    background-position: 100% 25px;
+    background-position: 95% 16px;
 }
 
 .slide:nth-child(2) {
     background-image: url('../img/slide-2.png');
     background-repeat: no-repeat;
-    background-position: 100% 10px;
+    background-position: 95% 16px;
 }
 
 .slide:nth-child(3) {
     background-image: url('../img/slide-3.png');
     background-repeat: no-repeat;
-    background-position: 100% 25px;
+    background-position: 95% 25px;
 }
 
 
