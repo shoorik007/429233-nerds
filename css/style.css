@@ -557,7 +557,7 @@ a:focus .icon-in {
 
 .modal-write-us label {
     font-size: 16px;
-    font-weight: 700px;
+    font-weight: 700;
     line-height: 18px;
     color: #000000;
 }
@@ -570,6 +570,8 @@ a:focus .icon-in {
     color: #444444;
     background-color: transparent;
     border: 2px solid #e4e8e9;
+    
+    margin-top: 12px;
 
 }
 
@@ -750,6 +752,8 @@ a:focus .icon-in {
 .filter-list ul {
     list-style: none;
     margin: 0;
+    
+   
 }
 
 .filter-list a {
@@ -1421,17 +1425,17 @@ input[type="radio"].visually-hidden {
 
 .modal-close {
     position: absolute;
+    
     top: 125px;
     right: 85px;
     
-    width: 30px;
-    height: 26px;
+    
     
     font-size: 0;
     
     background: none;
     
-    border: 0;
+    border: none;
     
     cursor: pointer;
 
@@ -1483,6 +1487,12 @@ input[type="radio"].visually-hidden {
   border: 2px solid #e4e8e9; 
 }
 
+.right-half {
+    margin-left: 40px;
+
+
+}
+
 .name-form input:hover {
   border-color: #cdd0d2;
 }
@@ -1494,13 +1504,14 @@ input[type="radio"].visually-hidden {
 
 .modal textarea {
     height: 110px;
-    width: 760px;
+    width: 740px;
     
     padding-left: 15px;
-    padding-top: 10px;
+    padding-top: 12px;
 
 
 }
+
 
 
 /* Сеточные стили каталога */
@@ -1532,7 +1543,6 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-list {
-    min-height: 35px;
     
     width: 760px;
     
@@ -1543,18 +1553,19 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-list ul {
-    min-width: 300px;
+    min-width: 270px;
     
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    
+    padding-left: 210px;
 
 }
 
 .icons {
-    min-width: 45px;
-    min-height: 30px;
-    
+    min-width: 35px;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
