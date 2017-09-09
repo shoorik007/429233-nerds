@@ -121,12 +121,23 @@ img {
 }
 
 .slider-controls {
-    position: absolute;
+   /* position: absolute;
     bottom: 95px;
     left: 50%;
     width: 160px;
     height: 18px;
-    margin-left: -100px;
+    margin-left: -75px;
+    text-align: center;
+    z-index: 1000; */
+    
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 96px;
+    left: 50%;
+    width: 94px;
+    height: 18px;
+    margin-left: -48px;
     text-align: center;
     z-index: 1000;
 }
@@ -197,7 +208,7 @@ img {
 .slide:nth-child(1) {
     background-image: url('../img/slide-1.png');
     background-repeat: no-repeat;
-    background-position: 95% 16px;
+    background-position: 93% 22px;
 }
 
 .slide:nth-child(2) {
@@ -267,7 +278,7 @@ img {
     display: inline-block;
     width: 160px;
     padding: 16px 0;
-    margin-top: 17px;
+    margin-top: 32px;
     font-size: 16px;
     text-transform: uppercase;
     text-align: center;
@@ -293,7 +304,7 @@ img {
     display: inline-block;
     width: 160px;
     padding: 16px 0;
-    margin-top: 17px;
+    margin-top: 32px;
     font-size: 16px;
     text-transform: uppercase;
     text-align: center;
@@ -319,7 +330,7 @@ img {
     display: inline-block;
     width: 160px;
     padding: 16px 0;
-    margin-top: 17px;
+    margin-top: 32px;
     font-size: 16px;
     text-transform: uppercase;
     text-align: center;
@@ -344,6 +355,9 @@ img {
     font: inherit;
     
     padding-right: 50px;
+    
+    margin: 0;
+    margin-top: 16px;
 }
 
 .offer-item-tittle {
@@ -354,7 +368,7 @@ img {
     text-transform: uppercase;
     
     margin: 0;
-    margin-top: 20px;
+    margin-top: 18px;
 
 }
 
@@ -384,6 +398,7 @@ img {
     line-height: 24px;
     
     margin: 0;
+    padding-left: 37px;
 }
 
 .table-title {
@@ -395,6 +410,7 @@ img {
     
     text-align: center;
     margin: 0;
+    padding-top: 3px;
     
 }
 
@@ -405,8 +421,15 @@ img {
     line-height: 11px;
     color: #000000;
     
+    padding: 0;
+    margin: 0;
+    
     padding-right: 20px;
-
+    
+    padding-bottom: 14px;
+    padding-top: 4px;
+    
+    text-align: left;
 }
 
 .partners-list {
@@ -414,8 +437,13 @@ img {
 }
 
 
+ .detail-right-column sup {
+     
+    font-size: 60%;
+}
+
 .footer-btn {
-    width: 85px;
+    width: 78px;
     height: 78px;
     
     background-color: #e1e1e1;
@@ -484,7 +512,7 @@ a:focus .icon-in {
     line-height: 18px;
     color: #666666;
     margin: 0;
-    padding-top: 26px;
+    padding-top: 22px;
 }
 
 .tel {
@@ -504,7 +532,7 @@ a:focus .icon-in {
     background: #fb565a;
     border-radius: 3px;
     margin: 0;
-    margin-top: 34px;
+    margin-top: 37px;
 }
 
 .map .map-btn:hover {
@@ -536,6 +564,9 @@ a:focus .icon-in {
     color: #000000;
     margin: 0;
     
+    margin-top: 2px;
+   
+    
 
 }
 
@@ -545,7 +576,7 @@ a:focus .icon-in {
     line-height: 22px;
     color: #444444;
     margin: 0;
-    margin-top: 13px;
+    margin-top: 10px;
 }
 
 .modal-write-us h2{
@@ -1028,7 +1059,7 @@ input[type="radio"].visually-hidden {
 
 
 .main-navigation {
-    min-height: 115px;
+    height: 126px;
     
     display: flex;
     flex-direction: row;
@@ -1058,7 +1089,7 @@ input[type="radio"].visually-hidden {
     margin: 0;
     padding: 0;
     
-    margin-bottom: 5px;
+    margin-bottom: 6px;
 
     margin-left: 200px;
     
@@ -1143,7 +1174,7 @@ input[type="radio"].visually-hidden {
     background: url(../img/line.png) no-repeat;
     background-position: bottom;
     
-    margin-top: 80px;
+    margin-top: 78px;
 
 }
 
@@ -1152,7 +1183,7 @@ input[type="radio"].visually-hidden {
     
     min-height: 348px;
     width: 300px;
-    padding-bottom: 80px;
+    padding-bottom: 82px;
     
 }
 
@@ -1172,27 +1203,27 @@ input[type="radio"].visually-hidden {
     background: url(../img/line.png) no-repeat;
     background-position: bottom;
     
-    padding-bottom: 40px;
+    padding-bottom: 36px;
     
 }
 
 .detail-title {
     padding-right: 50px;
     margin: 0;
-    margin-top: 75px;
+    margin-top: 73px;
 
 }
 
 .detail-info {
     padding-right: 150px;
     margin: 0;
-    margin-top: 30px;
+    margin-top: 34px;
 
 }
 
 .detail-list-title {
     margin: 0;
-    margin-top: 40px;
+    margin-top: 39px;
     margin-bottom: 24px;
 
 }
@@ -1251,7 +1282,15 @@ input[type="radio"].visually-hidden {
 }
 
 .detail-right-column td {
-    padding-top: 32px;
+    padding: 0;
+    margin: 0;
+    
+    padding-top: 20px;
+    
+    font-size: 16px;
+    line-height: 18px;
+    
+    padding-right: 20px;
 
 
 }
@@ -1259,7 +1298,7 @@ input[type="radio"].visually-hidden {
 .detail-header-image {
     margin: 0;
     margin-bottom: 26px;
-    margin-top: 44px;
+    margin-top: 40px;
 
 }
 
@@ -1272,7 +1311,7 @@ input[type="radio"].visually-hidden {
     background-position: bottom;
     
 
-    min-height: 135px;
+    min-height: 137px;
 }
 
 .partners-list {
@@ -1306,9 +1345,16 @@ input[type="radio"].visually-hidden {
 }
 
 
+.partners-list li {
+        margin-left: -10px;
+
+
+}
+
 .partners-list a{
     padding-right: 25px;
     opacity: 0.2;
+    margin-left: -12px;
 }
 
 .partners-list a:hover{
@@ -1343,7 +1389,7 @@ input[type="radio"].visually-hidden {
 .map-container {
     width: 1160px;
     
-    height: 310px;
+    min-height: 310px;
     
     /*background-image: url(../img/background-map.jpg);
     background-repeat: no-repeat;*/
@@ -1390,6 +1436,8 @@ input[type="radio"].visually-hidden {
     
     margin: 0px;
     padding: 0px;
+    
+    width: 260px;
     
 }
 
@@ -1634,7 +1682,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item {
     width: 360px;
-    height: 615px;
+    max-height: 615px;
     
     margin-bottom: 35px;
     margin-right: 40px;
@@ -1642,17 +1690,17 @@ input[type="radio"].visually-hidden {
     position: relative;
     
     text-align: center;
-    top: -12px;
-   
+    
+    outline-style: dotted;
+    outline-color: aqua;
+    
 }
 
 .catalog-item svg {
     position: relative;
-    top: 8px;
         
-    
-
 }
+
 
 
 
@@ -1722,6 +1770,11 @@ input[type="radio"].visually-hidden {
     background: #fb565a;
     border-radius: 3px;
     
+}
+
+.item-link{
+    color: #000000;
+
 }
 
 
