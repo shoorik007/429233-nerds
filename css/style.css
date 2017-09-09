@@ -796,6 +796,13 @@ a:focus .icon-in {
 
 }
 
+.filter-list .current {
+    color: #000000;
+
+}
+
+
+
 .filter-list a:hover {
     color: rgba(0, 0, 0, 0.6);
 }
@@ -1641,6 +1648,10 @@ input[type="radio"].visually-hidden {
     fill: #231f20;
 }
 
+.icon-current {
+    fill: #010101;
+
+}
 
 .catalog {
     margin: 0;
@@ -1691,8 +1702,9 @@ input[type="radio"].visually-hidden {
     
     text-align: center;
     
-    outline-style: dotted;
-    outline-color: aqua;
+    
+    
+    padding-top: 40px;
     
 }
 
@@ -1711,14 +1723,40 @@ input[type="radio"].visually-hidden {
 
 
 
-.browser {
+/*.browser {
     fill: rgba(77, 77, 77, 0.12);
 }
 
 .catalog-item:hover .browser {
     fill: rgb(77, 77, 77);
+}*/
+
+
+
+.catalog-item::after {
+    content: "";
+    position: absolute;
+    
+    top: 1px;
+    left: 0px;
+    
+    
+    height: 40px;
+    width: 360px;
+    
+    background-image: url("../img/browser-grey.jpg");
+    background-repeat: no-repeat;
+
 }
 
+.catalog-item:hover::after {
+    background-image: url("../img/browser.svg");
+}
+
+.catalog img {
+    height: 100%;
+
+}
 
 .catalog-details {
     position: absolute;
