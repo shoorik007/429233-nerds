@@ -1900,6 +1900,11 @@ input[type="radio"].visually-hidden {
     
 }
 
+.paginator a{
+    margin-right: 7px;
+
+}
+
 
 .current-page {
     display: inline-block;
@@ -1908,7 +1913,7 @@ input[type="radio"].visually-hidden {
     background-color: none;
     
     width: 44px;
-    height: 44px;
+    height: 46px;
     
     color: #000000;
     font-weight: 600;
