@@ -523,7 +523,6 @@ a:focus .icon-in {
     display: inline-block;
     width: 220px;
     padding: 16px 0;
-    margin-top: 25px;
     font-size: 16px;
     color: white;
     text-transform: uppercase;
@@ -539,7 +538,6 @@ a:focus .icon-in {
     display: inline-block;
     width: 220px;
     padding: 16px 0;
-    margin-top: 25px;
     font-size: 16px;
     color: white;
     text-transform: uppercase;
@@ -547,7 +545,7 @@ a:focus .icon-in {
     text-decoration: none;
     background: #e74246;
     border-radius: 3px;
-    margin-top: 34px;
+    margin-top: 37px;
 }
 
 
@@ -724,6 +722,7 @@ a:focus .icon-in {
 
 
 
+
 .filters legend {
     font-size: 18px;
     font-weight: 700;
@@ -741,14 +740,18 @@ a:focus .icon-in {
 
 
 .filter fieldset {
-  border: none;
-  margin-bottom: 54px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    margin-bottom: 52px;
+    
 }
 
 .filter ul {
-  list-style: none;
-  line-height: 20px;
-  margin: 0;
+    
+    list-style: none;
+    line-height: 20px;
+    margin: 0;
   
 }
 
@@ -778,6 +781,7 @@ a:focus .icon-in {
     line-height: 18px;
     text-transform: uppercase;
     margin: 0;
+    margin-top: 2px;
 }
 
 .filter-list ul {
@@ -858,7 +862,7 @@ input[type="checkbox"] + label {
     vertical-align: top;
     cursor: pointer;
     
-    margin-top: 15px;
+    margin-top: 18px;
 }
 
 input[type="checkbox"] + label::before {
@@ -868,7 +872,7 @@ input[type="checkbox"] + label::before {
     height: 26px;
     background: url(../img/checkbox-off.svg) no-repeat;
     position: absolute;
-    top: 0;
+    top: -2px;
     left: -40px;
 }
 
@@ -889,7 +893,7 @@ input[type="radio"] + label {
     cursor: pointer;
     
     
-    margin-top: 15px;
+    margin-top: 18px;
 }
 
 input[type="radio"] + label::before {
@@ -1387,6 +1391,11 @@ input[type="radio"].visually-hidden {
     
 }
 
+.map-2 {
+     margin-top: 60px;
+
+}
+
 
 
 
@@ -1621,7 +1630,7 @@ input[type="radio"].visually-hidden {
 }
 
 .icons {
-    min-width: 35px;
+    min-width: 40px;
 
     display: flex;
     flex-direction: row;
@@ -1669,12 +1678,13 @@ input[type="radio"].visually-hidden {
     display: flex;
     justify-content: space-between;
     
-    margin-top: 65px;
+    margin-top: 56px;
 }
 
 .catalog-colums-right {
     display: flex;
     flex-direction: column;
+    margin-left: 100px;
     
 }
 
@@ -1693,7 +1703,7 @@ input[type="radio"].visually-hidden {
 
 .catalog-item {
     width: 360px;
-    max-height: 615px;
+    max-height: 574px;
     
     margin-bottom: 35px;
     margin-right: 40px;
@@ -1701,9 +1711,7 @@ input[type="radio"].visually-hidden {
     position: relative;
     
     text-align: center;
-    
-    
-    
+
     padding-top: 40px;
     
 }
@@ -1822,6 +1830,7 @@ input[type="radio"].visually-hidden {
     padding: 0px;
     margin: 0;
     white-space: nowrap;
+    margin-top: 8px;
 }
 
 
