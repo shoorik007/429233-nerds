@@ -755,6 +755,7 @@ a:focus .icon-in {
 
 .site-navigation-current {
     border-bottom: 2px solid #f7898b;
+    margin-bottom: -2px;
 }
 
 
@@ -765,7 +766,10 @@ a:focus .icon-in {
     margin-bottom: 56px;
 }
 
+.filter fieldset:nth-of-type(2) {
+     margin-bottom: 38px;
 
+}
 
 .filter ul {
     
@@ -840,7 +844,8 @@ a:focus .icon-in {
 .filter-button{
     display: inline-block;
     width: 260px;
-    padding: 19px 0;
+    padding: 14px 0;
+    font: inherit;
     font-size: 16px;
     font-weight: 500;
     color: #000000;
@@ -851,6 +856,7 @@ a:focus .icon-in {
     border: none;
     border-radius: 3px;
     cursor: pointer;
+    margin-top: -14px;
     
 
 }
@@ -882,7 +888,8 @@ input[type="checkbox"] + label {
     vertical-align: top;
     cursor: pointer;
     
-    margin-top: 18px;
+    margin-top: 15px;
+    padding-bottom: 6px;
 }
 
 input[type="checkbox"] + label::before {
