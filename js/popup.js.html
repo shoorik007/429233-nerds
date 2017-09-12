@@ -1,4 +1,4 @@
-        var link = document.querySelector(".map-btn");
+﻿        var link = document.querySelector(".map-btn");
         var popup = document.querySelector(".modal-write-us");
         var close = document.querySelector(".modal-close");
         var user_name = popup.querySelector("[name=first-name]");
@@ -13,25 +13,26 @@
             evt.preventDefault();
             popup.classList.add("modal-show");
             
-          if (storage_name) {
+            if (storage_name) {
                 user_name.value = storage_name;
                 user_email.focus();
-          } else {
+            } else {
                 user_name.focus();
             }
             
-          if (storage_email) {
+            if (storage_email) {
                 user_email.value = storage_email;
                 user_name.focus();
-          } else {
+            } else {
                 user_email.focus();
             }
             
-          if (storage_name || storage_email) {
+            if (storage_name || storage_email) {
                 user_name.value = storage_name;
                 user_email.value = storage_email;
+                
                 message.focus();
-          }   
+            }   
         });  
           
         close.addEventListener("click", function(evt) {
@@ -41,11 +42,11 @@
         });
           
         window.addEventListener("keydown", function(evt){
-          if (evt.keyCode === 27) {
-            if(popup.classList.contains("modal-show")) {
+            if (evt.keyCode === 27) {
+              if(popup.classList.contains("modal-show")) {
                 popup.classList.remove("modal-show");
-            } 
-          }
+              } 
+            }
         });
           
         form.addEventListener("submit", function(evt) {
@@ -53,9 +54,10 @@
             evt.preventDefault();
             popup.classList.add("modal-error");
               
-          } else {
+            } else {
                 localStorage.setItem("user_name", user_name.value);
                 localStorage.setItem("user_email", user_email.value);
 
-            } 
+            }
+           
         });

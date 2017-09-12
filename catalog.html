@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-      
     <!-- Header -->
     <header class="main-header">
       <nav class="main-navigation wrapper">
@@ -26,16 +25,14 @@
           </ul>
        </nav>
     </header>
-      
-      
-      
       <!-- Main -->
       <!-- Filtes -->
-      <main class="container wrapper">
-          <div class="page-title-center">
+      <section class="up-section">
+          <div class="page-title-center up-section-catalog">
               <h1 class="page-title">Магазин готовых шаблонов</h1>
           </div>
-          
+      </section>
+      <main class="container wrapper">
           <div class="catalog-columns">
           <section class="filters">
               <h2 class="visually-hidden">Фильр услуг</h2>
@@ -48,7 +45,6 @@
                           <div class="toggle min-toggle"></div>
                           <div class="toggle max-toggle"></div>
                      </div>
-                     
                      <div class="price-controls">
                        <label class="left" for="min-price">
                            от <input class="min-price" name="min-pice" type="text" value="0" id="min-price">
@@ -59,7 +55,6 @@
                        </label>     
                      </div>
                   </fieldset>
-                  
                   <fieldset>
                       <legend>Сетка:</legend>
                         <ul>
@@ -105,7 +100,6 @@
                   <button class="btn filter-button" type="submit">Показать</button>
               </form>
           </section>
-              
           <div class="catalog-colums-right">   
           <section class="filter-list">
               <h2 class="visually-hidden">Фильтры</h2>
@@ -115,7 +109,6 @@
                 <li class="filter-option"><a href="#">По типу</a></li>
                 <li class="filter-option"><a href="#">По названию</a></li>
               </ul>
-              
             <div class="icons">
               <a href="#">
                   <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path class="icon-current icon-down" fill="#010101" d="M5.5 10L0 0h11"/>
@@ -128,18 +121,12 @@
               </a>
             </div>   
           </section>
-          
           <!-- Catalog -->
           <section class="catalog">
               <h2 class="visually-hidden">Список готовых шаблонов</h2>
               <ul class="catalog-list">
                 <li class="catalog-item">
-                  <!--<svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
-                    <path class="browser" fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/>
-                  </svg>-->
-                    
                  <img class="catalog-img" src="img/img-sedona.jpg" width="360" height="574" alt="Sedona. Информационный сайт для туристов">    
-                      
                  <div class="catalog-details">   
                     <h3 class="catalog-title"><a class="item-link" href="#">Sedona</a></h3>
                     <p class="catalog-description">
@@ -149,14 +136,8 @@
                     <a class="btn catalog-button" href="#">9 900 РУБ.</a>
                  </div>    
                 </li>
-                  
                 <li class="catalog-item">
-                     <!--<svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
-                          <path class="browser" fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/>
-                      </svg>-->
-                    
                     <img src="img/img-pink.jpg" width="360" height="577" alt="Pink App. Продуктовый лендинг приложения для IOS и Android">
-                    
                 <div class="catalog-details">
                     <h3 class="catalog-title"><a class="item-link" href="#">Pink App</a></h3>
                     <p class="catalog-description">
@@ -166,14 +147,8 @@
                     <a class="btn catalog-button" href="#">9 900 РУБ.</a>
                 </div>
                 </li>
-                  
                 <li class="catalog-item">
-                      <!--<svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
-                          <path class="browser" fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/>
-                      </svg>-->
-                    
                     <img src="img/img-barbershop.jpg" width="360" height="577" alt="Barbershop. Сайт салона красоты. Для мужчин, да.">
-                    
                   <div class="catalog-details">
                       <h3 class="catalog-title"><a class="item-link" href="#">Barbershop</a></h3>
                       <p class="catalog-description">
@@ -183,14 +158,7 @@
                     <a class="btn catalog-button" href="#">9 900 РУБ.</a>
                   </div>
                 </li>
-                  
                 <li class="catalog-item">
-<!--
-                      <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
-                          <path class="browser" fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/>
-                      </svg> 
--->
-                    
                      <img src="img/img-mishka.jpg" width="360" height="577" alt="Mishka. Интернет-магазин вязаных игрушек.">
                     
                   <div class="catalog-details"> 
@@ -202,16 +170,8 @@
                     <a class="btn catalog-button" href="#">9 900 РУБ.</a>
                  </div> 
                 </li>
-                  
                 <li class="catalog-item">
-<!--
-                      <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
-                          <path class="browser" fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/>
-                      </svg> 
--->
-                    
                     <img src="img/img-aplus.jpg" width="360" height="577" alt="A Plus. Лендинг курсов повышения квалификации.">
-                    
                   <div class="catalog-details"> 
                     <h3 class="catalog-title"><a class="item-link" href="#">A Plus</a></h3>
                     <p class="catalog-description">
@@ -221,16 +181,8 @@
                     <a class="btn catalog-button" href="#">9 900 РУБ.</a>
                   </div>     
                 </li>
-                  
                 <li class="catalog-item">
-<!--
-                      <svg xmlns="http://www.w3.org/2000/svg" width="360" height="40" viewBox="0 0 360 40">
-                          <path class="browser" fill="#4D4D4D" d="M356 0H4C1.8 0 0 1.8 0 4v36h360V4c0-2.2-1.8-4-4-4zM22.991 27a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14zm23.011 0a7 7 0 1 1 0-14 7 7 0 0 1 0 14z"/>
-                      </svg> 
--->
-                    
                     <img src="img/img-kvast.jpg" width="360" height="577" alt="Кваст. Промо-сайт производителя крафтового кваса .">
-                    
                   <div class="catalog-details">
                       <h3 class="catalog-title"><a class="item-link" href="#">Кваст</a></h3>
                     <p class="catalog-description">
@@ -241,7 +193,6 @@
                   </div>    
                 </li>
               </ul>
-            
               <div class="paginator">
                 <a class="current-page" href="#">1</a>
                 <a href="#">2</a>
@@ -252,7 +203,6 @@
         </div>     
     </div>
  </main>
-      
       <!-- Map -->
           <section class="map map-2">
            <h2 class="visually-hidden">Как нас найти?</h2>
@@ -263,15 +213,11 @@
                     191186, Санкт-Петербург,<br>
                     ул. Б. Конюшенная, д. 19/8<br>
                   </p>
-                  
                   <p class="map-block-info tel">тел. +7 (812) 275-75-75</p>
-                  
                 <a href="feedback.html" class="btn map-btn">Напишите нам</a>
               </div>
-                <!--<img src="img/background-map.jpg" width="1440" height="416" alt="Офис компании по адресу ул. Б. Конюшенная, д. 19/8, Санкт-Петербург">-->
             </div>  
         </section>
-      
       <!-- Footer -->
       <footer class="main-footer">
           <section class="bottom-footer wrapper">
@@ -294,7 +240,6 @@
             </section>
         </section>
       </footer>
-      
       <!-- Write us form -->
       <section class="modal modal-write-us">
         <h2>Напишите нам</h2>
@@ -307,13 +252,11 @@
                 <label for="modal-name">Ваше имя</label>
                 <input class="name-of-user" type="text" name="first-name" placeholder="Представьтесь, пожалуйста" id="modal-name">
            </p>
-      
             <p class="right-half">
                 <label for="modal-email">Ваш e-mail</label>
                 <input class="email-of-user" type="text" name="email" placeholder="Для отправки ответа" id="modal-email">
            </p>
            </div> 
-            
            <p>
                <label for="modal-letter">Текст письма</label><br>
                <textarea id="modal-letter" placeholder="В свободной форме"></textarea>
@@ -321,5 +264,6 @@
             <button class="btn modal-post" type="post">Отправить</button>  
           </form>
       </section>
+      <script src="js/popup.js"></script>
   </body>
 </html>

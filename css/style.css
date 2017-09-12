@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     
-    font-family: "Roboto", sans-serif;
+    font-family: Roboto, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -28,9 +28,6 @@ img {
     color: #000000;
     background-color: #eeeeee;
 }
-
-
-
 
 .site-navigation,
 .user-navigation {
@@ -71,8 +68,6 @@ img {
     background-position: 0 0;
 }
 
-
-
 .site-navigation a:hover,
 .user-navigation a:hover {
  color: #fb565a;
@@ -93,12 +88,14 @@ img {
 
 }
 
-
-
-
 /*Новая разметка слайдов*/
 .up-section{
     background-color: #eeeeee;
+}
+
+.up-section-catalog {
+    margin-left: 370px;
+    
 }
 
 .slider {
@@ -207,19 +204,19 @@ img {
 }
 
 .slide:nth-child(1) {
-    background-image: url('../img/slide-1.png');
+    background-image: url("../img/slide-1.png");
     background-repeat: no-repeat;
     background-position: 93% 5px;
 }
 
 .slide:nth-child(2) {
-    background-image: url('../img/slide-2.png');
+    background-image: url("../img/slide-2.png");
     background-repeat: no-repeat;
     background-position: 95% 5px;
 }
 
 .slide:nth-child(3) {
-    background-image: url('../img/slide-3.png');
+    background-image: url("../img/slide-3.png");
     background-repeat: no-repeat;
     background-position: 95% 5px;
 }
@@ -240,8 +237,6 @@ img {
 #btn-3:checked ~ .slides .slide:nth-child(3) {
     display: block;
 }
-
-
 
 .btn {
     font-size: 16px;
@@ -350,8 +345,6 @@ img {
     box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
 }
 
-
-
 .offer-item-info {
     font: inherit;
     
@@ -388,7 +381,6 @@ img {
     color: #000000;
 }
 
-
 .detail-list-title {
     text-transform: uppercase;
     color: #000000;
@@ -414,7 +406,6 @@ img {
     padding-top: 3px;
     
 }
-
 
 .accuracy th {
     font-size: 45px;
@@ -472,7 +463,6 @@ img {
     
 }
 
-
 .footer-btn:hover {
     background-color: #e74246;
 }
@@ -483,18 +473,12 @@ img {
 
 }
 
-
-
 a:focus .icon-vk,
 a:focus .icon-fb,
 a:focus .icon-in {
     fill: rgba(255, 255, 255, 0.3);
 
 }
-
-
-
-
 
 .map-block-title {
     font-size: 18px;
@@ -565,14 +549,10 @@ a:focus .icon-in {
 
 }
 
-
-
 .footer-left-column ul {
     list-style: none;
     
 }
-
-
 
 .footer-title {
     font-size: 36px;
@@ -628,10 +608,6 @@ a:focus .icon-in {
     cursor: pointer;
 }
 
-
-
-
-
 .modal-write-us input:focus,
 .modal-write-us textarea:focus{
     background-color: transparent;
@@ -639,8 +615,6 @@ a:focus .icon-in {
     outline: black;
 
 }
-
-
 
 /*Страница каталога*/
 .range-filter {
@@ -723,25 +697,6 @@ a:focus .icon-in {
 
 }
 
-/*.price-controls {
-    position: relative;
-
-}
-
-.left label{
-    position: absolute;
-    left: 0;
-
-}
-
-.right label{
-    position: absolute;
-    right: 0;
-}*/
-
-
-
-
 .filters legend {
     font-size: 18px;
     font-weight: 700;
@@ -749,9 +704,6 @@ a:focus .icon-in {
     color: #000000;
     text-transform: uppercase;
 }
-
-
-
 
 .site-navigation-current {
     border-bottom: 2px solid #f7898b;
@@ -763,7 +715,7 @@ a:focus .icon-in {
     padding: 0;
     margin: 0;
     border: none;
-    margin-bottom: 56px;
+    margin-bottom: 58px;
 }
 
 .filter fieldset:nth-of-type(2) {
@@ -829,8 +781,6 @@ a:focus .icon-in {
 
 }
 
-
-
 .filter-list a:hover {
     color: rgba(0, 0, 0, 0.6);
 }
@@ -844,10 +794,11 @@ a:focus .icon-in {
 .filter-button{
     display: inline-block;
     width: 260px;
-    padding: 14px 0;
+    padding: 16px 0;
     font: inherit;
     font-size: 16px;
     font-weight: 500;
+    line-height: 18px;
     color: #000000;
     text-transform: uppercase;
     text-align: center;
@@ -897,14 +848,14 @@ input[type="checkbox"] + label::before {
     display: block;
     width: 26px;
     height: 26px;
-    background: url(../img/checkbox-off.svg) no-repeat;
+    background: url("../img/checkbox-off.svg") no-repeat;
     position: absolute;
     top: -2px;
     left: -40px;
 }
 
 input[type="checkbox"]:checked + label::before {
-    background: url(../img/checkbox-on.svg) no-repeat;
+    background: url("../img/checkbox-on.svg") no-repeat;
     
 }
 
@@ -929,18 +880,17 @@ input[type="radio"] + label::before {
     display: block;
     width: 26px;
     height: 26px;
-    background: url(../img/radio-off.svg) no-repeat;
+    background: url("../img/radio-off.svg") no-repeat;
     position: absolute;
     top: -4px;
     left: -40px;
 }
 
 input[type="radio"]:checked + label::before {
-    background: url(../img/radio-on.svg) no-repeat;
+    background: url("../img/radio-on.svg") no-repeat;
     
     
 }
-
 
 input[type="checkbox"] + label::before,
 input[type="checkbox"]:checked + label::before,
@@ -950,7 +900,6 @@ input[type="radio"]:checked + label::before {
 
 }
 
-
 input[type="checkbox"]:hover + label::before,
 input[type="checkbox"]:hover:checked + label::before,
 input[type="radio"]:hover + label::before,
@@ -959,15 +908,12 @@ input[type="radio"]:hover:checked + label::before {
 
 }
 
-
-
-
-
 .pagination-button {
     display: inline-block;
     width: 260px;
     padding: 16px 0;
     margin-top: 50px;
+    font: inherit;
     font-size: 16px;
     font-weight: 600;
     color: #000000;
@@ -979,6 +925,7 @@ input[type="radio"]:hover:checked + label::before {
     border-radius: 3px;
     cursor: pointer;
 }
+
 
 .pagination-button:hover {
     color: #000000;
@@ -993,17 +940,6 @@ input[type="radio"]:hover:checked + label::before {
     box-shadow: inset 0 3px 0 0 rgba(0, 1, 1, 0.1);
     border: none;
 }
-
-
-
-/*.filter-list .current {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    color: #000000;
-    text-transform: uppercase;
-}
-*/
 
 .catalog-list {
      list-style: none;
@@ -1026,46 +962,6 @@ input[type="radio"]:hover:checked + label::before {
     text-align: center;
     
 }
-
-
-
-/*
-.pagination-list {
-    list-style: none;
-}
-
-.pagination-item a {
-    color: #000000;
-    background-color: #eeeeee;
-    
-}
-
-.pagination-item a:hover {
-    background-color: #dfdfdf;
-}
-
-.pagination-item a:focus {
-    background-color: #d5d5d5;
-    box-shadow: inset 0 3px 0px 0px rgba(0, 1, 1, 0.1);
-    color: rgba(0, 0, 0, 0.3);
-    
-}
-
-
-.pagination-item a:active {
-
-}
-
-.pagination-item-current a {
-    
-}
-
-.pagination-item-current a:hover,
-.pagination-item-current a:focus,
-.pagination-item-current a:active {
-  
-}
-*/
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
@@ -1095,8 +991,6 @@ input[type="radio"].visually-hidden {
     
 }
 
-
-
 .main-navigation {
     height: 126px;
     
@@ -1105,8 +999,6 @@ input[type="radio"].visually-hidden {
     align-items: flex-end;
 
 }
-
-
 
 .main-header-logo { 
     width: 160px;
@@ -1162,16 +1054,6 @@ input[type="radio"].visually-hidden {
     
 }
 
-
- /*.wrapper-container {
-  display: flex;
- justify-content: space-between;  
- 
-
-}*/
-
-
-
 /* Slides */
 .slider-container {
     margin: 0;
@@ -1211,7 +1093,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     justify-content: space-between;
     
-    background: url(../img/line.png) no-repeat;
+    background: url("../img/line.png") no-repeat;
     background-position: bottom;
     
     margin-top: 78px;
@@ -1227,10 +1109,6 @@ input[type="radio"].visually-hidden {
     
 }
 
-
-
-
-
 /* detail */
 .detail {
     position: relative;
@@ -1240,7 +1118,7 @@ input[type="radio"].visually-hidden {
     flex-direction: row;
     
     
-    background: url(../img/line.png) no-repeat;
+    background: url("../img/line.png") no-repeat;
     background-position: bottom;
     
     padding-bottom: 36px;
@@ -1342,12 +1220,10 @@ input[type="radio"].visually-hidden {
 
 }
 
-
-
 /* Partners */
 
 .partners {
-    background: url(../img/line.png) no-repeat;
+    background: url("../img/line.png") no-repeat;
     background-position: bottom;
     
 
@@ -1411,9 +1287,6 @@ input[type="radio"].visually-hidden {
 
 }
 
-
-
-
 .partners-list a{
     padding-right: 25px;
     opacity: 0.2;
@@ -1428,9 +1301,7 @@ input[type="radio"].visually-hidden {
     opacity: 0.1;
 }
 
-
 /*Map*/
-
 .map {
     width: 100%;
     min-height: 420px;
@@ -1443,28 +1314,23 @@ input[type="radio"].visually-hidden {
     
 }
 
+/*.map iframe {
+    margin-left: 232px;
+    z-index: 0;
+}
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6073672247653!2d30.320631751981914!3d59.938657081787206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sru!4v1505162188756" width="1440px" height="420" frameborder="0" style="border:0" allowfullscreen></iframe>*/
+
 .map-2 {
      margin-top: 60px;
 
 }
 
-
-
-
-/*<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2826.5086631257755!2d30.321220179380127!3d59.93805850208495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca640933%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sru!4v1504627299289" width="1440" height="418" frameborder="0" style="border:0" allowfullscreen></iframe>*/
-
-
 .map-container {
     width: 1160px;
     
     min-height: 310px;
-    
-    /*background-image: url(../img/background-map.jpg);
-    background-repeat: no-repeat;*/
-    
     display: flex;
-    
-    
 }
 
 
@@ -1490,8 +1356,6 @@ input[type="radio"].visually-hidden {
 
 .bottom-footer {
     display: flex;
-   /*  justify-content: space-between;*/
-    
 }
 
 .footer-left-column {
@@ -1516,7 +1380,6 @@ input[type="radio"].visually-hidden {
     
 }
 
-
 .modal {
     position: fixed;
     
@@ -1526,8 +1389,6 @@ input[type="radio"].visually-hidden {
     
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
 }
-
-
 
 .modal-write-us {
     top: 320px;
@@ -1659,8 +1520,6 @@ input[type="radio"].visually-hidden {
 
 
 }
-
-
 
 /* Сеточные стили каталога */
 
@@ -1812,18 +1671,6 @@ input[type="radio"].visually-hidden {
  
 }
 
-
-
-/*.browser {
-    fill: rgba(77, 77, 77, 0.12);
-}
-
-.catalog-item:hover .browser {
-    fill: rgb(77, 77, 77);
-}*/
-
-
-
 .catalog-item::after {
     content: "";
     position: absolute;
@@ -1863,8 +1710,6 @@ input[type="radio"].visually-hidden {
 
 }
 
-
-
 .catalog-item:hover .catalog-details {
     display: block;
 
@@ -1883,8 +1728,6 @@ input[type="radio"].visually-hidden {
     
     text-align: center;
 }
-
-
 
 .catalog-button {
     display: inline-block;
@@ -1915,8 +1758,6 @@ input[type="radio"].visually-hidden {
     white-space: nowrap;
     margin-top: 8px;
 }
-
-
 
 .paginator a:not(.current-page) {
     display: inline-block;
@@ -1967,14 +1808,3 @@ input[type="radio"].visually-hidden {
     text-align: center;
     vertical-align: bottom;
 }
-
-
-
-
-
-
-
-
-
-
-
