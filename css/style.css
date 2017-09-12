@@ -839,8 +839,8 @@ input[type="checkbox"] + label {
     vertical-align: top;
     cursor: pointer;
     
-    margin-top: 15px;
-    padding-bottom: 6px;
+    margin-top: 17px;
+    padding-bottom: 3px;
 }
 
 input[type="checkbox"] + label::before {
@@ -871,8 +871,8 @@ input[type="radio"] + label {
     cursor: pointer;
     
     
-    margin-top: 16px;
-    padding-bottom: 4px;
+    margin-top: 14px;
+    padding-bottom: 6px;
 }
 
 input[type="radio"] + label::before {
