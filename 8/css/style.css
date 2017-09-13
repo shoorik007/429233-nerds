@@ -416,7 +416,7 @@ img {
     padding: 0;
     margin: 0;
     
-    padding-right: 20px;
+    padding-right: 17px;
     
     padding-bottom: 14px;
     padding-top: 4px;
@@ -1166,7 +1166,7 @@ input[type="radio"].visually-hidden {
 
 .detail li:nth-child(1)::before {
     
-    top: 340px;
+    top: 343px;
     left: 0;
 }
 
