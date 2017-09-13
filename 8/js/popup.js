@@ -51,6 +51,8 @@
         form.addEventListener("submit", function(evt) {
           if (!user_name.value || !user_email.value) {    
             evt.preventDefault();
+            popup.classList.remove("modal-error");
+            popup.offsetWidth = popup.offsetWidth;
             popup.classList.add("modal-error");
               
           } else {
