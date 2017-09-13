@@ -1601,7 +1601,7 @@ input[type="radio"].visually-hidden {
     width: 360px;
     padding-bottom: 45px;
     
-    display: block;
+    display: none;
     
     background-color: #eeeeee;
     overflow: hidden;
