@@ -720,7 +720,7 @@ a:focus .icon-in {
 }
 
 .filter-input:hover + label {
-    color: #505050;
+    color: #000000;
 }
 
 .filter-input:disabled + label {
@@ -935,7 +935,7 @@ input[type="radio"]:hover:checked + label::before {
 
 .catalog-description p {
     margin: 0px;
-    margin-top: -2px;
+    padding: 0 50px;
 }
 
 .visually-hidden:not(:focus):not(:active),
