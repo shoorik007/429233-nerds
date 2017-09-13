@@ -715,7 +715,7 @@ a:focus .icon-in {
     padding: 0;
     margin: 0;
     border: none;
-    margin-bottom: 58px;
+    margin-bottom: 56px;
 }
 
 .filter fieldset:nth-of-type(2) {
@@ -739,12 +739,12 @@ a:focus .icon-in {
 }
 
 .filter-input + label {
-    color: #969a9d;
+    color: #283136;
  
 }
 
 .filter-input:hover + label {
-    color: #000000;
+    color: #283136;
 }
 
 .filter-input:disabled + label {
@@ -807,7 +807,7 @@ a:focus .icon-in {
     border: none;
     border-radius: 3px;
     cursor: pointer;
-    margin-top: -14px;
+    margin-top: -10px;
     
 
 }
@@ -840,6 +840,7 @@ input[type="checkbox"] + label {
     cursor: pointer;
     
     margin-top: 17px;
+    margin-left: -3px;
     padding-bottom: 3px;
 }
 
@@ -851,7 +852,7 @@ input[type="checkbox"] + label::before {
     background: url("../img/checkbox-off.svg") no-repeat;
     position: absolute;
     top: -2px;
-    left: -40px;
+    left: -36px;
 }
 
 input[type="checkbox"]:checked + label::before {
@@ -872,6 +873,7 @@ input[type="radio"] + label {
     
     
     margin-top: 14px;
+    margin-left: -3px;
     padding-bottom: 6px;
 }
 
@@ -883,7 +885,7 @@ input[type="radio"] + label::before {
     background: url("../img/radio-off.svg") no-repeat;
     position: absolute;
     top: -4px;
-    left: -40px;
+    left: -36px;
 }
 
 input[type="radio"]:checked + label::before {
@@ -911,7 +913,7 @@ input[type="radio"]:hover:checked + label::before {
 .pagination-button {
     display: inline-block;
     width: 260px;
-    padding: 16px 0;
+    padding: 14px 0;
     margin-top: 50px;
     font: inherit;
     font-size: 16px;
@@ -957,7 +959,7 @@ input[type="radio"]:hover:checked + label::before {
     font-size: 16px;
     font-weight: 400;
     line-height: 18px;
-    color: #a1a1a1;
+    color: #666666;
     
     text-align: center;
     
@@ -1322,7 +1324,7 @@ input[type="radio"].visually-hidden {
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6073672247653!2d30.320631751981914!3d59.938657081787206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8403eb878242dbd5!2z0JTQvtGF0L7QtNC90YvQuSDQtNC-0Lwg0J0uINCQLiDQnNC10LvRjNGG0LXRgNCw!5e0!3m2!1sru!2sru!4v1505162188756" width="1440px" height="420" frameborder="0" style="border:0" allowfullscreen></iframe>*/
 
 .map-2 {
-     margin-top: 60px;
+     margin-top: 57px;
 
 }
 
@@ -1378,6 +1380,11 @@ input[type="radio"].visually-hidden {
 .footer-right-column {
     margin-left: 140px;
     
+}
+
+.footer-right-catalog{
+    margin-top: 2px;
+
 }
 
 .modal {
@@ -1535,7 +1542,7 @@ input[type="radio"].visually-hidden {
 }
 
 .page-title-center h1 {
-     margin-top: 67px;
+     margin-top: 65px;
 }
 
 .filters {
@@ -1567,7 +1574,7 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     
     padding-left: 221px;
-    padding-top: 2px;
+    
 
 }
 
@@ -1732,8 +1739,8 @@ input[type="radio"].visually-hidden {
 .catalog-button {
     display: inline-block;
     width: 200px;
-    padding: 19px 0;
-    margin-top: 25px;
+    padding: 16px 0;
+    margin-top: 10px;
     font-size: 16px;
     color: white;
     text-transform: uppercase;
@@ -1756,7 +1763,8 @@ input[type="radio"].visually-hidden {
     padding: 0px;
     margin: 0;
     white-space: nowrap;
-    margin-top: 8px;
+    margin-top: 7px;
+
 }
 
 .paginator a:not(.current-page) {
@@ -1798,7 +1806,7 @@ input[type="radio"].visually-hidden {
     background-color: none;
     
     width: 44px;
-    height: 46px;
+    height: 48px;
     
     color: #000000;
     font-weight: 600;
